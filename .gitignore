@@ -1,4 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
-/default site/*
+default site
+Mockups and such
+*.sublime-project
+*.sublime-workspace
