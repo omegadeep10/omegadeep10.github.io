@@ -1,17 +1,44 @@
+//General Styles
+.heading
+    font-family: $heading
+    font-size: 2em
+
+//END General Styles
+
 
 .nav
 
     ul
         float: right
+        margin-top: 40px
 
         li
             list-style: none
             display: inline-block
             font-family: $heading
-            font-size: 24px
-        
-            &:not(:last-child)
-                padding-right: 20px
+            font-size: 20px
+            margin-right: 25px
+            
+            a
+                text-decoration: none
+                color: black
 
-h1
-    font-family: $heading
+                &:hover
+                    color: #0072bc
+
+
+
+.header
+    float: left
+    width: 750px
+    margin: 190px 0 190px 170px
+    
+    h1
+        font-family: $heading
+        font-weight: normal
+        font-size: 60px
+        margin-bottom: 41px
+
+    .subtitle
+        font-family: $paragraph
+        font-size: 35px
