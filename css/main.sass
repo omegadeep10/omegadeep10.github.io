@@ -9,7 +9,7 @@
     box-sizing: border-box
 
 .content
-    width: 1280px
+    max-width: 1280px
     display: block
     margin: 0 auto
     padding: 20px 52px
@@ -20,6 +20,19 @@
     clear: both
 
 
+@import bourbon/bourbon
 @import vars
 @import header
 @import work
+@import media-queries
+
+
+
+
+//General Styles
+
+.heading
+    font-family: $heading
+    font-size: 2em
+
+//END General Styles
