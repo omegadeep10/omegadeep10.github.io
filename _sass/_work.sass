@@ -1,4 +1,23 @@
 .work
     background: #ebebeb
     display: block
-    height: 300px
+    min-height: 100vh
+
+    .content
+        padding-bottom: 50px
+
+    .heading
+        padding-left: 10px
+
+    img
+        width: 33%
+        float: right
+        @include transition(all .3s ease-in-out)
+
+        &:hover
+            @include transform(scale(1.03))
+            box-shadow: #444 0px 3px 10px
+
+    .button
+        float: right
+        margin-top: 70px

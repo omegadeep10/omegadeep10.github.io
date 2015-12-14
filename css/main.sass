@@ -24,15 +24,30 @@
 @import vars
 @import header
 @import work
+@import blog
 @import media-queries
 
 
-
-
 //General Styles
-
 .heading
     font-family: $heading
-    font-size: 2em
+    font-size: 1.8em
+    padding: 15px 0 40px 0
 
-//END General Styles
+.button
+    text-decoration: none
+    font-size: 1.3em
+    font-family: $heading
+    padding: 7px 20px
+    color: black
+    border: 1px solid black
+    border-radius: 3px
+    @include transition(all .3s ease-in-out)
+
+    &:hover
+        color: $link-hover
+        border-color: $link-hover
+
+
+
+//End General Styles
