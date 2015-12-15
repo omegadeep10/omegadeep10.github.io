@@ -1,26 +1,36 @@
 .work
     background: #ebebeb
     display: block
-    min-height: 100vh
 
     .content
         padding-bottom: 100px
 
-    .heading
-        padding-left: 10px
+        .heading
+            padding-left: 10px
 
-    .one
+    .grid-item
+        display: inline-block
+        overflow: hidden
+        float: right
+        height: 300px
+        @include transition(all .3s ease-in-out)
+
+        &:hover
+            @include transform(scale(1.03))
+            box-shadow: #444 0px 3px 10px
+
+    .col-1
         width: 33%
 
-    .two
+    .col-2
         width: 66%
 
-    .three
+    .col-3
         width: 99%
 
     img
-        float: right
         @include transition(all .3s ease-in-out)
+        width: 100%
 
         &:hover
             @include transform(scale(1.03))
