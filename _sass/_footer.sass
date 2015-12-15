@@ -1,0 +1,85 @@
+footer
+    background-color: black
+    padding-top: 40px
+
+    .heading
+        color: white
+        font-family: $paragraph
+
+    //Contact Form
+    .contact
+        display: inline-block
+        float: left
+
+        input, textarea
+            display: block
+            color: #999
+            border: none
+            background-color: black
+            border-bottom: 1px solid #888
+            padding: 3px 0
+            font-size: 1.1em
+            font-family: $paragraph
+            margin-bottom: 40px
+            width: 100%
+
+            &:focus
+                color: white
+                border-bottom: 1px solid white
+
+        textarea
+            height: 150px
+            width: 300px
+
+        .button
+            color: #888
+            border: 1px solid #888
+            width: auto
+            padding: 7px 20px
+            font-family: $paragraph
+            float: left
+            margin: 20px 0 100px 0
+
+            &:hover
+                color: $link-hover
+                border-color: $link-hover
+
+    //About/Social Media
+    .about
+        float: right
+        display: inline-block
+        width: 350px
+
+        .about-info
+            color: white
+            font-family: $paragraph
+            font-size: 1.2em
+
+    .social
+        @extend .about
+        clear: right
+        margin-top: 50px
+
+        a
+            text-decoration: none
+            color: white
+            float: left
+            clear: both
+            font-family: $paragraph
+            font-size: 1.2em
+            margin: 2px 0
+            padding: 2px 0
+
+            &:hover
+                color: $link-hover
+                border-bottom: 1px solid $link-hover
+
+        .copyright
+            float: left
+            clear: both
+            font-family: $paragraph
+            color: #888
+            margin-top: 50px
+            
+            &:hover
+                color: white
