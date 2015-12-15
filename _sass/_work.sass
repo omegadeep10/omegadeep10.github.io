@@ -1,9 +1,9 @@
-.work
+#work
     background: #ebebeb
     display: block
 
     .content
-        padding-bottom: 100px
+        padding-bottom: 70px
 
         .heading
             padding-left: 10px
@@ -11,13 +11,43 @@
     .grid-item
         display: inline-block
         overflow: hidden
+        position: relative
         float: right
         height: 300px
         @include transition(all .3s ease-in-out)
 
         &:hover
+            z-index: 1
             @include transform(scale(1.03))
             box-shadow: #444 0px 3px 10px
+
+        .info
+            opacity: 0
+            background: rgba(0, 0, 0, .8)
+            padding-top: 100px
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            font-family: $heading
+            text-align: center
+            @include transition(all .3s ease-in-out)
+
+            &:hover
+                opacity: 1.0
+                cursor: pointer
+
+            .title
+                padding-top: 5px
+                font-size: 1.5em
+                color: white
+            
+            .subtitle
+                font-size: .8em
+                padding-top: 4px
+                color: #888
+
 
     .col-1
         width: 33%
@@ -29,13 +59,4 @@
         width: 99%
 
     img
-        @include transition(all .3s ease-in-out)
         width: 100%
-
-        &:hover
-            @include transform(scale(1.03))
-            box-shadow: #444 0px 3px 10px
-
-    .button
-        float: right
-        margin-top: 70px

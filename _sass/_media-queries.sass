@@ -4,7 +4,7 @@
         float: right
         margin-left: 0
     
-    .work
+    #work
 
         .col-1
             width: 49%
@@ -12,6 +12,29 @@
         .col-2
             width: 99%
 
+
+
+@media (max-width: 800px)
+    footer
+        .content
+            padding: 0 20%
+
+            #contact
+                float: none
+                display: block
+                margin: 0 auto
+
+                textarea
+                    width: 100%
+
+                .button
+                    margin-bottom: 40px
+
+            #about
+                float: none
+                margin: 0 auto
+                width: auto
+                margin-bottom: 30px
 
 
 @media (max-width: 700px)
@@ -25,22 +48,49 @@
         .subtitle
             font-size: 1.5em
 
+    #work
+        
+        .content
+            padding-bottom: 50px
+
+    #blog
+        padding-bottom: 100px
+
+        .post
+        
+            .post-title
+                font-size: 1.2em
+
+            .post-info
+                font-size: .9em
+
 
 
 
 @media (max-width: 650px)    
-    .work
+    .heading
+        font-size: 2em
+
+    #work
         
         .grid-item
-            float: none
+            display: inline-block
 
         .col-1
             width: 99%
-            height: 300px
+            height: 250px
 
         .col-2, .col-3
             width: 99%
             height: auto
+
+            img
+                margin-bottom: -20px
+            
+            .info
+                padding-top: 15%
+
+
 
 
 
@@ -53,6 +103,7 @@
 
         li
             font-size: 1.1em
+            margin-right: 20px
     
     .header
         margin-top: 80px
@@ -64,3 +115,7 @@
 
         .subtitle
             font-size: 1.4em
+    
+    footer
+        .content
+            padding: 0 10%
