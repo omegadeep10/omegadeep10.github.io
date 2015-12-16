@@ -1,13 +1,9 @@
 
 # Site settings
 title: Deep Patel Portfolio
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  This is Deep Patel's personal website. View his projects, android themes,
-  read Kustom tutorials, and more here.
+description: > #This is Deep Patel's personal website. View my projects, android themes,
+  and read my Kustom tutorials here.
 baseurl: ""
-url: "http://yourdomain.com"
-github_username:  jekyll
 
 # Build settings
-exclude: ["README.md", "default site", "Mockups and such", "portfolio.sublime-project", "portfolio.sublime-workspace"]
+exclude: ["README.md", "default site", "portfolio.sublime-project", "portfolio.sublime-workspace"]
