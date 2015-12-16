@@ -69,10 +69,10 @@ footer
             font-size: 1.2em
             margin: 2px 0
             padding: 2px 0
+            @include transition(all .3s ease-in-out)
 
             &:hover
                 color: $link-hover
-                border-bottom: 1px solid $link-hover
 
         .copyright
             float: left
@@ -80,6 +80,7 @@ footer
             font-family: $paragraph
             color: #888
             margin-top: 50px
+            @include transition(all .3s ease-in-out)
             
             &:hover
                 color: white
