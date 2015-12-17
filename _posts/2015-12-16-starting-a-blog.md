@@ -1,6 +1,7 @@
 ---
 tags:
-- Other
+- Other,
+  Status Updates
 title: Starting a Blog.
 ---
 

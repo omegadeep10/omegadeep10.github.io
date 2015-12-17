@@ -32,48 +32,26 @@ layout: default
   </div>
 </div>
 
-
-
 <div id="blog">
   <div class="content">
     <h3 class="heading">Blog</h3>
-    
-    <div class="blog-post">
-      <span id="triangle-right"></span>
-      <div class="post">
-        <p class="post-title">Why you should use Kustom's overlap and stack groups.</p>
-        <p class="post-info">Posted 12/11/15 in Kustom, Theming</p>
-      </div>
-    </div>
 
+    {% for post in site.posts %}
     <div class="blog-post">
       <span id="triangle-right"></span>
       <div class="post">
-        <p class="post-title">Why you should use Kustom's overlap and stack groups.</p>
-        <p class="post-info">Posted 12/11/15 in Kustom, Theming</p>
+        <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+        <p class="post-info">Posted {{ post.date | date: '%B %d, %Y' }} in {{ post.tags }}</p>
       </div>
     </div>
-
-    <div class="blog-post">
-      <span id="triangle-right"></span>
-      <div class="post">
-        <p class="post-title">Why you should use Kustom's overlap and stack groups.</p>
-        <p class="post-info">Posted 12/11/15 in Kustom, Theming</p>
-      </div>
-    </div>
+    {% endfor %}
 
     <a href="#" class="button">All Posts</a>
 
   </div>
 </div>
 
-
-
-
-
-
 <footer>
-
 
   <div class="content clearfix">
 

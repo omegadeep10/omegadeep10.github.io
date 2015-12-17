@@ -25,6 +25,12 @@
 
         .post-title
             font-size: 1.4em
+            text-decoration: none
+            color: black
+            @include transition(all .3s ease-in-out)
+
+            &:hover
+                color: $link-hover
 
         .post-info
             font-size: 1em
