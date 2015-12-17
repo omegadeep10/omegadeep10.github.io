@@ -1,15 +1,19 @@
 ---
 layout: default
+
+title: Hi, I'm Deep Patel
+subtitle: I am a college student in Georgia who likes to make websites, javascript apps, android themes, and more.
+
+links:
+  - title: Work
+    url: "#work"
+  - title: Blog
+    url: "#blog"
+  - title: Contact
+    url: "#contact"
+  - title: About
+    url: "#about"
 ---
-
-<header class="content clearfix">
-  <div class="header">
-    <h1>Hi, I'm Deep Patel.</h1>
-    <span class="subtitle">I am a college student in Georgia who likes to make websites, javascript apps, android themes, and more.</span>
-  </div>
-</header>
-
-
 
 <div id="work">
   <div class="content clearfix">
@@ -19,11 +23,13 @@ layout: default
 
       {% for thumbnail in site.data.portfolio %}
       <div class="grid-item {{ thumbnail.size }}">
-        <img class="lazyload" data-src="{{ thumbnail.image_url }}" style="{{ thumbnail.style }}">
-        <div class="info">
-          <p class="title">{{ thumbnail.title }}</p>
-          <p class="subtitle">{{ thumbnail.subtitle }}</p>
-        </div>
+        <img class="lazyload" data-src="{{ thumbnail.image_url }}" alt="{{ thumbnail.title }} - {{ thumbnail.subtitle }}" style="{{ thumbnail.style }}">
+        <a href="{{ thumbnail.link }}">
+          <div class="info">
+            <p class="title">{{ thumbnail.title }}</p>
+            <p class="subtitle">{{ thumbnail.subtitle }}</p>
+          </div>
+        </a>
       </div>
       {% endfor %}
 
@@ -36,7 +42,7 @@ layout: default
   <div class="content">
     <h3 class="heading">Blog</h3>
 
-    {% for post in site.posts %}
+    {% for post in site.posts limit: 5 %}
     <div class="blog-post">
       <span id="triangle-right"></span>
       <div class="post">
@@ -50,35 +56,3 @@ layout: default
 
   </div>
 </div>
-
-<footer>
-
-  <div class="content clearfix">
-
-    <div id="contact">
-      <h3 class="heading">Contact</h3>
-
-      <form class="clearfix">
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea type="text" placeholder="Your Message"></textarea>
-        <input type="submit" value="Submit" class="button">
-      </form>
-    </div>
-
-    <div id="about">
-      <h3 class="heading">About</h3>
-      <p class="about-info">I'm an aspiring web developer who enjoys all things web related. Right now, I am working on completing my college degree, but I still do programming and web development projects on the side. I am also active in the android theming community and I like to write about it. You can find me on:</p>
-    </div>
-    
-    <div class="social">
-      <h3 class="heading">Social Media</h3>
-      <a href="http://github.com/omegadeep10">GitHub</a>
-      <a href="http://reddit.com/u/omegadeep10">Reddit</a>
-
-      <span class="copyright">&copy; Deep Patel 2015 - All Rights Reserved</span>
-    </div>
-
-
-  </div>
-</footer>
