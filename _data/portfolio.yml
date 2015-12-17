@@ -1,0 +1,35 @@
+- image_url: /assets/thumbnails/disc-min.jpg
+  title: Disc
+  subtitle: Theme Design
+  size: col-1
+  style: ""
+
+- image_url: /assets/thumbnails/material-min.png
+  title: Material
+  subtitle: Theme Design
+  size: col-1
+  style: ""
+
+- image_url: /assets/thumbnails/darkspace-min.png
+  title: Darkspace
+  subtitle: Theme Design
+  size: col-1
+  style: ""
+
+- image_url: /assets/thumbnails/bookmark-min.jpg
+  title: Bookmark
+  subtitle: Theme Design
+  size: col-1
+  style: ""
+
+- image_url: /assets/thumbnails/js-calculator-min.png
+  title: Simple Calculator
+  subtitle: JavaScript Project
+  size: col-2
+  style: "margin-top: -20%;"
+
+- image_url: /assets/thumbnails/screencasterz-min.png
+  title: ScreenCasterZ
+  subtitle: Web Development
+  size: col-3
+  style: ""

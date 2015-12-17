@@ -17,53 +17,15 @@ layout: default
     
     <div class="img-grid clearfix">
 
-      <div class="grid-item col-1">
-        <img class="lazyload" data-src="/assets/thumbnails/disc-min.jpg">
+      {% for thumbnail in site.data.portfolio %}
+      <div class="grid-item {{ thumbnail.size }}">
+        <img class="lazyload" data-src="{{ thumbnail.image_url }}" style="{{ thumbnail.style }}">
         <div class="info">
-          <p class="title">Disc</p>
-          <p class="subtitle">Theme Design</p>
+          <p class="title">{{ thumbnail.title }}</p>
+          <p class="subtitle">{{ thumbnail.subtitle }}</p>
         </div>
       </div>
-
-      <div class="grid-item col-1">
-        <img class="lazyload" data-src="/assets/thumbnails/material-min.png">
-        <div class="info">
-          <p class="title">Material</p>
-          <p class="subtitle">Theme Design</p>
-        </div>
-      </div>
-
-      <div class="grid-item col-1">
-        <img class="lazyload" data-src="/assets/thumbnails/darkspace-min.png">
-        <div class="info">
-          <p class="title">Darkspace</p>
-          <p class="subtitle">Theme Design</p>
-        </div>
-      </div>
-
-      <div class="grid-item col-1">
-        <img class="lazyload" data-src="/assets/thumbnails/bookmark-min.jpg">
-        <div class="info">
-          <p class="title">Bookmark</p>
-          <p class="subtitle">Theme Design</p>
-        </div>
-      </div>
-
-      <div class="grid-item col-2">
-        <img class="lazyload" data-src="/assets/thumbnails/js-calculator-min.png" style="margin-top: -20%">
-        <div class="info">
-          <p class="title">Simple Calculator</p>
-          <p class="subtitle">JavaScript Project</p>
-        </div>
-      </div>
-
-      <div class="grid-item col-3">
-        <img class="lazyload" data-src="/assets/thumbnails/screencasterz-min.png">
-        <div class="info">
-          <p class="title">ScreenCasterZ</p>
-          <p class="subtitle">Web Development</p>
-        </div>
-      </div>
+      {% endfor %}
 
     </div>
     
