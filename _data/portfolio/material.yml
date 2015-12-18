@@ -1,0 +1,53 @@
+- image_url: /assets/portfolio/material/006.png
+  title: Material Home Screen
+  subtitle: This theme was created by following Google's material design guidelines as strictly as possible. This is the app launcher.
+  size: col-1
+  style: ""
+
+- image_url: /assets/portfolio/material/004.png
+  title: Weather
+  subtitle: The weather card is a modifed version of /u/thespud86's material weather card design.
+  size: col-1
+  style: ""
+
+- image_url: /assets/portfolio/material/007.png
+  title: Calendar
+  subtitle: The calendar automatically pulls information from the calendar of your choice. The blue circles can be toggled to mark task completion.
+  size: col-1
+  style: ""
+
+- image_url: /assets/portfolio/material/008.png
+  title: System
+  subtitle: The toggles are fully functional; they are powered by Tasker.
+  size: col-1
+  style: ""
+
+- image_url: /assets/portfolio/material/002.png
+  title: Music
+  subtitle: The music player reads currently playing music information and pulls the latest album art.
+  size: col-1
+  style: ""
+
+- image_url: /assets/portfolio/material/010.png
+  title: Dark Mode
+  subtitle: The theme also has a dark mode that can be turned on simply by toggling a kustom variable.
+  size: col-1
+  style: ""
+
+- image_url: /assets/portfolio/material/003.png
+  title: Weather Dark
+  subtitle: The dark mode is designed to provide a pleasant experience at night.
+  size: col-1
+  style: ""
+
+- image_url: /assets/portfolio/material/006.png
+  title: Alternate Home
+  subtitle: 'For people who do not want to use Tasker, this alternate edition only requires Kustom.'
+  size: col-1
+  style: ""
+
+- image_url: /assets/portfolio/material/001.png
+  title: Cards
+  subtitle: The system settings still show the current bluetooth/wifi/etc state even without Tasker.
+  size: col-1
+  style: ""

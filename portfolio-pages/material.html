@@ -1,10 +1,10 @@
 ---
 layout: default
 
-title: Disc - Theme Design
+title: 'Material - Theme Design'
 
-header-title: 'Disc - Theme Design'
-header-subtitle: 'In this project, I designed a music-centered android theme using Kustom.'
+header-title: 'Material - Theme Design'
+header-subtitle: In this project, I designed a theme based on Google's material design guidelines.
 
 links:
   - title: Home
@@ -12,14 +12,14 @@ links:
   - title: Contact
     url: "#contact"
   - title: Download
-    url: "https://www.reddit.com/r/androidthemes/comments/3w07eh/disc/"
+    url: "https://www.reddit.com/r/androidthemes/comments/3fmfzp/pure_material/"
 ---
 
 <div id="img-container">
 
     <div class="content clearfix">
-
-        {% for item in site.data.portfolio.disc %}
+        
+        {% for item in site.data.portfolio.material %}
            <div class="grid-item {{ item.size }}">
             <img data-src="{{ item.image_url }}" alt="{{ item.title }}" class="lazyload">
             <div class="info">
@@ -29,6 +29,10 @@ links:
         </div> 
         {% endfor %}
 
+        <div class="grid-item col-3">
+            <iframe width="100%" height="699px" src="https://www.youtube.com/embed/ldfOkcO91hI" frameborder="0" allowfullscreen></iframe>
+        </div>
+                
     </div>
 
 </div>
