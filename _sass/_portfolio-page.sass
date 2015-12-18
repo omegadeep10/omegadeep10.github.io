@@ -1,39 +1,58 @@
 
-.img-container
+#img-container
     background: #ebebeb
     display: block
-
-    h3
-        font-family: $heading
-        font-size: 2em
-        font-weight: normal
-        margin: 10px 0 20px 0
-
-    p
-        font-family: $paragraph
-        font-size: 1.3em
-        padding-bottom: 20px
-
+    
     .content
+        padding: 100px 52px
 
-        .left
-            float: left
+    .grid-item
+        float: left
+        position: relative
+        @include transition(all .3s ease-in-out)
 
-        .right
-            float: right
+        &:hover
+            z-index: 1
+            @include transform(scale(1.03))
+            box-shadow: #444 0px 3px 10px
 
-        & > div
-            padding: 40px 0
+        img
+            width: 100%
+            margin: 0
+
+    .info
+        opacity: 0
+        background: rgba(0, 0, 0, .8)
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        font-family: $heading
+        text-align: center
+        @include transition(all .3s ease-in-out)
+
+        &:hover
+            opacity: 1.0
+            cursor: pointer
+
+        .title
+            padding-top: 250px
+            font-size: 1.5em
+            color: white
+            font-weight: normal
+    
+        .subtitle
+            font-size: 1em
+            padding: 10px 40px 0 40px
+            color: #888
 
     .col-1
-        width: 30%
-        margin: 0 1.5%
-        vertical-align: bottom
+        width: 33%
 
     .col-2
-        width: 63%
-        margin: 0 1.5%
+        width: 66%
 
     .col-3
-        width: 96%
-        margin: 0 1.5%
+        width: 99%
+        margin-top: -5px

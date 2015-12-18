@@ -12,6 +12,31 @@
         .col-2
             width: 99%
 
+    #img-container
+
+        .grid-item.col-1
+            width: 49%
+
+        .grid-item.col-2
+            width: 99%
+
+        .grid-item
+            background: white
+
+            .info
+                position: static
+                opacity: 1.0
+                background: white
+                display: block
+                height: 130px
+
+                .title
+                    padding-top: 10px
+                    color: black
+
+                .subtitle
+                    color: rgba(0, 0, 0, .8)
+
 
 
 @media (max-width: 800px)
@@ -90,6 +115,26 @@
             .info
                 padding-top: 15%
 
+    #img-container
+
+        .content
+            padding: 50px 30px
+
+        .grid-item.col-1
+            width: 99%
+
+        .grid-item.col-2
+            width: 99%
+
+        .grid-item
+            margin-bottom: 20px
+
+            .info
+                display: inline
+
+                .subtitle
+                    padding: 10px 20px 20px 20px
+
 
 
 
@@ -119,3 +164,13 @@
     footer
         .content
             padding: 0 10%
+
+    #img-container
+        .content
+            padding: 50px 20px
+
+            .info
+                text-align: left
+
+                .title
+                    padding-left: 20px
