@@ -9,6 +9,8 @@ title: Starting a Blog.
 
 It's almost 2016! For my New Year's resolution, I want to start putting my thoughts out there. I honestly don't think anyone will read this blog, but I think blogging is a great idea anyways. Writing also helps you think clearly because the process of putting words on paper forces you to clarify and explain the thoughts inside your head. This is why drawings, journals, and whiteboards are so effective when one is trying to solve a difficult problem.
 
+![journal](http://www.mortylefkoe.com/wp-content/uploads/bigstock-Journal-050713.jpg)
+
 For example, something interesting happens every time I try to post on Stack Overflow. I write an explanation of my problem and what I have tried to fix it. This helps me look at the issue with a different perspective which usually leads me to figure out the answer on my own, so I don't post my question. The problem was really the way I was approaching the issue, and collecting and ordering my thoughts through writing helped me get through my brain fog. Blogs are really just a collection of ordered thoughts made public.
 
 ##Content
