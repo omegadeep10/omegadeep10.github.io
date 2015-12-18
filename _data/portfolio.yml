@@ -5,12 +5,16 @@
   style: ""
   link: /portfolio-pages/disc.html
 
+
+
 - image_url: /assets/thumbnails/material-min.png
   title: Material
   subtitle: Theme Design
   size: col-1
   style: ""
   link: /portfolio-pages/
+
+
 
 - image_url: /assets/thumbnails/darkspace-min.png
   title: Darkspace
@@ -19,6 +23,8 @@
   style: ""
   link: /portfolio-pages/
 
+
+
 - image_url: /assets/thumbnails/bookmark-min.jpg
   title: Bookmark
   subtitle: Theme Design
@@ -26,12 +32,16 @@
   style: ""
   link: /portfolio-pages/
 
+
+
 - image_url: /assets/thumbnails/js-calculator-min.png
   title: Simple Calculator
   subtitle: JavaScript Project
   size: col-2
   style: "margin-top: -20%;"
   link: /portfolio-pages/
+
+
 
 - image_url: /assets/thumbnails/screencasterz-min.png
   title: ScreenCasterZ

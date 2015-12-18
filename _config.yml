@@ -1,8 +1,9 @@
 
 # Site settings
-title: Deep Patel Portfolio
-description: > #This is Deep Patel's personal website. View my projects, android themes,
-  and read my Kustom tutorials here.
+title: Deep Patel | Portfolio
+description: >
+    This is Deep Patel's personal website. View my projects, android themes,
+    and read my Kustom tutorials here.
 baseurl: ""
 
 # Build settings
