@@ -1,0 +1,35 @@
+- image_url: /assets/portfolio/darkspace/01.png
+  title: Home Screen
+  subtitle: The dynamic text reflects current weather conditions and time of day.
+  size: col-1
+  style: ""
+
+- image_url: /assets/portfolio/darkspace/02.png
+  title: Time
+  subtitle: Clicking on the dynamic text brings up these scrollable information stacks.
+  size: col-1
+  style: ""
+
+- image_url: /assets/portfolio/darkspace/03.png
+  title: Music
+  subtitle: Tapping on the album art opens the music player.
+  size: col-1
+  style: ""
+
+- image_url: /assets/portfolio/darkspace/04.png
+  title: Weather
+  subtitle: This weather stack shows the temperature forecast for the next week.
+  size: col-1
+  style: ""
+
+- image_url: /assets/portfolio/darkspace/05.png
+  title: Apps
+  subtitle: This a simple text-based app launcher.
+  size: col-1
+  style: ""
+
+- image_url: /assets/portfolio/darkspace/06.png
+  title: System
+  subtitle: The WiFi and Data icons show current signal strength.
+  size: col-1
+  style: ""

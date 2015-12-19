@@ -1,0 +1,42 @@
+---
+layout: default
+
+title: Darkspace - Theme Design
+
+header-title: 'Darkspace - Theme Design'
+header-subtitle: 'In this project, I designed a minimal monochrome theme that uses vertical scrolling.'
+
+links:
+  - title: Home
+    url: "http://omegadeep10.github.io"
+  - title: Contact
+    url: "#contact"
+  - title: Download
+    url: "https://www.reddit.com/r/androidthemes/comments/3d4u0n/darkspace/"
+---
+
+<div id="img-container">
+
+    <div class="content clearfix">
+
+        <div class="grid-item col-3">
+          <img data-src="http://i.imgur.com/KYCponI.gif" alt="Darkspace Demo" class="lazyload">
+          <div class="info">
+            <h3 class="title">Darkspace Demo</h3>
+            <p class="subtitle">This theme uses vertical scrolling and gradients to naturally focus your attention towards the center.</p>
+          </div>
+        </div>
+
+        {% for item in site.data.showcase.darkspace %}
+           <div class="grid-item {{ item.size }}">
+            <img data-src="{{ item.image_url }}" alt="{{ item.title }}" class="lazyload">
+            <div class="info">
+                <h3 class="title">{{ item.title }}</h3>
+                <p class="subtitle">{{ item.subtitle }}</p>
+            </div>
+        </div> 
+        {% endfor %}
+
+    </div>
+
+</div>
