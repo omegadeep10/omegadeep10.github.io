@@ -30,7 +30,7 @@
   subtitle: Theme Design
   size: col-1
   style: ""
-  link: /portfolio-pages/
+  link: /portfolio-pages/bookmark.html
 
 
 
@@ -39,7 +39,7 @@
   subtitle: JavaScript Project
   size: col-2
   style: "margin-top: -20%;"
-  link: /portfolio-pages/
+  link: /portfolio-pages/js-calculator.html
 
 
 
@@ -48,4 +48,4 @@
   subtitle: Web Development
   size: col-3
   style: ""
-  link: /portfolio-pages/
+  link: /portfolio-pages/screencasterz.html

@@ -1,0 +1,34 @@
+---
+layout: default
+
+title: Bookmark - Theme Design
+
+header-title: 'Bookmark - Theme Design'
+header-subtitle: 'In this project, I created a customizable animated bookmark using KLWP'
+
+links:
+  - title: Home
+    url: "http://omegadeep10.github.io"
+  - title: Contact
+    url: "#contact"
+  - title: Download
+    url: "https://www.reddit.com/r/androidthemes/comments/3845px/functional_bookmark_version_2/"
+---
+
+<div id="img-container">
+
+    <div class="content clearfix">
+
+        {% for item in site.data.showcase.bookmark %}
+           <div class="grid-item {{ item.size }}">
+            <img data-src="{{ item.image_url }}" alt="{{ item.title }}" class="lazyload">
+            <div class="info">
+                <h3 class="title">{{ item.title }}</h3>
+                <p class="subtitle">{{ item.subtitle }}</p>
+            </div>
+        </div> 
+        {% endfor %}
+
+    </div>
+
+</div>
