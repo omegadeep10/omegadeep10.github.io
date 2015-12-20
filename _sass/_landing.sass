@@ -1,0 +1,80 @@
+//nav section
+.nav
+
+    ul
+        float: right
+        margin-top: 40px
+
+        li
+            list-style: none
+            display: inline-block
+            font-family: $abel
+            font-size: 1.3em
+            margin-right: 25px
+
+//nav styles if user scrolls down
+.nav.fixed
+    position: fixed
+    z-index: 2
+    width: 100%
+    background-color: white
+    box-shadow: #666 0px -3px 10px
+
+    ul
+        margin-top: 0
+
+        li
+            font-size: 1.1em
+
+//header section
+.header
+    float: left
+    max-width: 750px
+    margin: 150px 0 230px 170px
+
+//Work section
+#work
+    background-color: $section-gray
+    padding: 50px 0 70px 0
+
+    .grid-item
+        display: block
+        height: 300px
+        overflow: hidden
+
+        .info
+            padding-top: 100px
+
+//Blog Section
+#blog
+    padding: 50px 0 70px 0
+
+    #triangle-right
+        width: 0
+        height: 0
+        border-top: 7px solid transparent
+        border-left: 12px solid black
+        border-bottom: 7px solid transparent
+        vertical-align: top
+        margin-top: 7px
+        float: left
+
+    .blog-post
+        margin-bottom: 25px
+
+    .post
+        display: block
+        margin-left: 40px
+        font-family: $abel
+
+        .post-title
+            font-size: 1.4em
+
+        .post-info
+            font-size: 1em
+            color: $post-info
+            margin-top: 2px
+
+    .button
+        margin: 20px
+        float: right

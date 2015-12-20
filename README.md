@@ -3,7 +3,7 @@ omegadeep10's website with blog posts, articles, news, portfolio, contact inform
 
 ##To-Do
 
-- [x] Minify images
+- [ ] Minify images
 - [ ] Add animations using animate.css and wow.js
 - [ ] Add "active" state to nav depending on current section
 - [ ] Minify & concatenate JS/CSS/HTML with Grunt/Gulp

@@ -19,7 +19,7 @@ links:
 
 <div id="work">
   <div class="content clearfix">
-    <h3 class="heading">Work</h3>
+    <h2>Work</h2>
     
     <div class="img-grid clearfix">
 
@@ -28,7 +28,7 @@ links:
         <img class="lazyload" data-src="{{ thumbnail.image_url }}" alt="{{ thumbnail.title }} - {{ thumbnail.subtitle }}" style="{{ thumbnail.style }}">
         <a href="{{ thumbnail.link }}">
           <div class="info">
-            <p class="title">{{ thumbnail.title }}</p>
+            <h3>{{ thumbnail.title }}</h3>
             <p class="subtitle">{{ thumbnail.subtitle }}</p>
           </div>
         </a>
@@ -41,8 +41,8 @@ links:
 </div>
 
 <div id="blog">
-  <div class="content">
-    <h3 class="heading">Blog</h3>
+  <div class="content clearfix">
+    <h2>Blog</h2>
 
     {% for post in site.posts limit: 5 %}
     <div class="blog-post">
