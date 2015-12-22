@@ -1,9 +1,7 @@
 ---
 layout: blog
 
-tags:
-- Other, 
-- Status Updates
+tags: Other, Status Updates
 
 header-title: Starting a Blog.
 header-subtitle: December 16, 2015 in Other, Status Updates

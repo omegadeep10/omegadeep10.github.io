@@ -1,8 +1,7 @@
 ---
 layout: blog
 
-tags:
-- Kustom
+tags: Kustom
 
 header-title: Kustom Overlap and Stack Groups explained.
 header-subtitle: December 18, 2015 in Kustom

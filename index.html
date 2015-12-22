@@ -49,12 +49,23 @@ links:
       <span id="triangle-right"></span>
       <div class="post">
         <a href="{{ post.url }}" class="post-title">{{ post.header-title }}</a>
-        <p class="post-info">Posted {{ post.date | date: '%B %d, %Y' }} in {{ post.tags }}</p>
+        <p class="post-info">Posted {{ post.date | date: '%B %d, %Y' }} in 
+        
+        {% capture tags %}
+          {% for tag in post.tags %}
+            {{ tag }}
+          {% endfor %}
+        {% endcapture %}
+        {% assign sortedtags = tags | split:',' | sort %}
+
+          {% for tag in sortedtags %} 
+            <span class="tag">{{ tag }}</span> 
+          {% endfor %}</p>
       </div>
     </div>
     {% endfor %}
 
-    <a href="#" class="button">All Posts</a>
+    <a href="/posts.html" class="button">All Posts</a>
 
   </div>
 </div>

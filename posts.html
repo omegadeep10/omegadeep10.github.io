@@ -1,0 +1,45 @@
+---
+layout: posts
+
+title: Deep Patel | Blog
+
+header-title: Blog Posts.
+header-subtitle: This is a list of all my blog posts.
+
+links:
+  - title: Home
+    url: "http://omegadeep10.github.io"
+  - title: Contact
+    url: "#contact"
+---
+
+
+
+
+<div id="posts">
+  <div class="content clearfix">
+
+    {% for post in site.posts %}
+    <div class="blog-post">
+      <span id="triangle-right"></span>
+      <div class="post">
+        <a href="{{ post.url }}" class="post-title">{{ post.header-title }}</a>
+        <p class="post-info">Posted {{ post.date | date: '%B %d, %Y' }} in 
+        
+        {% capture tags %}
+          {% for tag in post.tags %}
+            {{ tag }}
+          {% endfor %}
+        {% endcapture %}
+        {% assign sortedtags = tags | split:',' | sort %}
+
+          {% for tag in sortedtags %} 
+            <span class="tag">{{ tag }}</span> 
+          {% endfor %}</p>
+
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</div>
