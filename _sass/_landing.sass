@@ -32,6 +32,12 @@
     max-width: 750px
     margin: 150px 0 230px 170px
 
+    a
+        border-bottom: 1px solid black
+
+        &:hover
+            border-bottom: 1px solid $link-hover
+
 //Work section
 #work
     background-color: $section-gray
@@ -47,7 +53,7 @@
 
 //Blog Section
 #blog
-    padding: 50px 0 70px 0
+    padding: 50px 0 50px 0
 
     #triangle-right
         width: 0
@@ -67,14 +73,97 @@
         margin-left: 40px
         font-family: $abel
 
-        .post-title
-            font-size: 1.4em
+    .post-title
+        font-size: 1.4em
 
-        .post-info
-            font-size: 1em
-            color: $post-info
-            margin-top: 2px
+    .post-info
+        font-size: 1em
+        color: $post-info
+        margin-top: 2px
 
     .button
         margin: 20px
         float: right
+
+//Footer
+footer
+    background-color: black
+    padding: 50px 0 70px 0
+    
+    h2
+        color: white
+    
+    //Contact
+    #contact
+        display: inline-block
+        float: left
+
+        input, textarea
+            display: block
+            color: #999
+            border: none
+            background-color: black
+            border-bottom: 1px solid #888
+            padding: 3px 0
+            font-size: 1.1em
+            font-family: $marvel
+            margin-bottom: 40px
+            width: 100%
+
+            &:focus
+                color: white
+                border-bottom: 1px solid white
+
+        textarea
+            height: 150px 
+            width: 300px
+
+        .button
+            color: #888
+            border: 1px solid #888
+            float: left
+            width: auto
+            padding: 7px 20px
+
+            &:hover
+                color: $link-hover
+                border-color: $link-hover
+
+    //About and Social
+    #about
+        float: right
+        display: inline-block
+        width: 350px
+
+        .about-info
+            color: white
+            font-family: $marvel
+            font-size: 1.2em
+
+    .social
+        @extend #about
+        clear: right
+        margin-top: 50px
+
+        a
+            color: white
+            font-family: $marvel
+            font-size: 1.2em
+            float: left
+            clear: both
+            display: inline-block
+            margin: 2px 0
+
+            &:hover
+                color: $link-hover
+
+        .copyright
+            float: left
+            clear: both
+            color: #888
+            font-family: $marvel
+            margin-top: 40px
+            @include transition(all .3s ease-in-out)
+
+            &:hover
+                color: white
