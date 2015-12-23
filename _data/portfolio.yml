@@ -3,7 +3,7 @@
   subtitle: Theme Design
   size: col-1
   style: ""
-  link: /portfolio-pages/disc.html
+  link: /portfolio-pages/disc/
 
 
 
@@ -12,7 +12,7 @@
   subtitle: Theme Design
   size: col-1
   style: ""
-  link: /portfolio-pages/material.html
+  link: /portfolio-pages/material/
 
 
 
@@ -21,7 +21,7 @@
   subtitle: Theme Design
   size: col-1
   style: ""
-  link: /portfolio-pages/darkspace.html
+  link: /portfolio-pages/darkspace/
 
 
 
@@ -30,7 +30,7 @@
   subtitle: Theme Design
   size: col-1
   style: ""
-  link: /portfolio-pages/bookmark.html
+  link: /portfolio-pages/bookmark/
 
 
 
@@ -39,7 +39,7 @@
   subtitle: JavaScript Project
   size: col-2
   style: "margin-top: -20%;"
-  link: /portfolio-pages/js-calculator.html
+  link: /portfolio-pages/js-calculator/
 
 
 
@@ -48,4 +48,4 @@
   subtitle: Web Development
   size: col-3
   style: ""
-  link: /portfolio-pages/screencasterz.html
+  link: /portfolio-pages/screencasterz/
