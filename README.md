@@ -6,7 +6,7 @@ omegadeep10's website with blog posts, articles, news, portfolio, contact inform
 - [ ] Minify images
 - [ ] Add animations using animate.css and wow.js
 - [ ] Add "active" state to nav depending on current section
-- [ ] Minify & concatenate JS/CSS/HTML with Grunt/Gulp
-- [ ] Make contact form functional using Formspree or other similar service
+- [x] ~~Minify & concatenate JS/CSS/HTML with Grunt/Gulp~~ *Github does this already apparently?*
+- [x] Make contact form functional using Formspree or other similar service
 - [ ] Add disqus comments to blog posts
 - [ ] Add resume design, personal website design to portfolio

@@ -2,6 +2,7 @@
 layout: blog
 
 tags: Kustom
+comments: true
 
 header-title: Kustom Overlap and Stack Groups explained.
 header-subtitle: December 18, 2015 in Kustom
@@ -34,7 +35,4 @@ I added a shape that changed the size of the overlap group. I want to keep the t
 Ta-da. Every module (including overlap and stack groups) has a anchor property that can be modified to change how the module is positioned relative to its container. In the example above, the text modules aligned themselves relative to the overlap group since that was their container. If I had modified the anchor property of a module in the root layer, it would align itself relative to the screen. Anchors and padding are the primary way to change the position of a module.
 
  Overlap groups also have a couple other handy features. You can scale all items in an overlap group at once simply using the layer -> scale property. You can also repeat/tile modules in an overlap group and animate all items inside an overlap group at once. This is also the downside of overlap groups. You cannot apply animations to any object that is not in the root layer, so by grouping objects together in an overlap group, you lose the ability to animate those objects individually.
-
-
-### Stack Groups
 
