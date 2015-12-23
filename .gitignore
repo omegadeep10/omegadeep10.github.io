@@ -1,6 +1,14 @@
+#Jekyll Folders
 _site
 .sass-cache
 .jekyll-metadata
+
+#default site folder
 default site
+
+#Sublime workspace
 *.sublime-project
 *.sublime-workspace
+
+#Project orginal images
+originals

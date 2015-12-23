@@ -8,5 +8,5 @@ omegadeep10's website with blog posts, articles, news, portfolio, contact inform
 - [ ] Add "active" state to nav depending on current section
 - [x] ~~Minify & concatenate JS/CSS/HTML with Grunt/Gulp~~ *Github does this already apparently?*
 - [x] Make contact form functional using Formspree or other similar service
-- [ ] Add disqus comments to blog posts
+- [x] Add disqus comments to blog posts
 - [ ] Add resume design, personal website design to portfolio

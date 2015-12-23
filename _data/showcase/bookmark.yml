@@ -1,16 +1,16 @@
-- image_url: /assets/portfolio/bookmark/01.png
+- image_url: /assets/portfolio/bookmark/01.jpg
   title: Bookmark
   subtitle: This bookmark was created using Kustom Live Wallpaper.
   size: col-1
   style: ""
 
-- image_url: /assets/portfolio/bookmark/02.png
+- image_url: /assets/portfolio/bookmark/02.jpg
   title: Customizable
   subtitle: The theme colors and image can easily be changed by editing a few global variables.
   size: col-1
   style: ""
 
-- image_url: /assets/portfolio/bookmark/03.png
+- image_url: /assets/portfolio/bookmark/03.jpg
   title: Alternate
   subtitle: This is another example how this theme can be customized.
   size: col-1

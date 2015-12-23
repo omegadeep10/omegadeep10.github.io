@@ -7,4 +7,4 @@ description: >
 baseurl: ""
 
 # Build settings
-exclude: ["README.md", "default site", "portfolio.sublime-project", "portfolio.sublime-workspace"]
+exclude: ["README.md", "default site", "portfolio.sublime-project", "portfolio.sublime-workspace", "originals"]
