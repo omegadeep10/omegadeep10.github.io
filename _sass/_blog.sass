@@ -12,6 +12,15 @@
     h2
         font-size: 2.5em
 
+        &:after
+            background: black
+            content: ""
+            display: block
+            width: 100px
+            height: 2px
+            margin: 26px auto 0 0
+
+
     h3
         color: black
         font-size: 2.0em
@@ -41,6 +50,17 @@
         p
             margin: 7px 0
 
+    a
+        border-bottom: 1px solid black
+
+        &:hover
+            border-bottom: 1px solid $link-hover
+    
+    img
+        display: block
+        margin: 25px auto
+        float: none
+
     .page-nav
         @extend .blog-post
         margin-bottom: 250px
@@ -52,6 +72,7 @@
             font-family: $marvel
             font-size: 1.3em
             margin-bottom: 100px
+            border: none
 
         .next
             float: right
