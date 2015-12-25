@@ -15,4 +15,81 @@
 
 <script async src="/js/smoothscroll.js"></script>
 <script async src="/js/lazysizes.min.js"></script>
-<script async src="/js/script.js"></script>
+<script>
+    function stickyNav() {
+    var nav = document.querySelector(".nav"); //nav bar
+    var header = document.querySelector(".header");  //header ("Hi I'm..." part)
+    if (window.scrollY < 50) { //check if the page has been scrolled LESS than 50px
+        nav.setAttribute("class", "nav"); //make nav class = "nav"
+        header.style.marginTop = "150px"; //set header's margin-top to 150px
+    }
+    else {
+        nav.setAttribute("class", "nav fixed"); //set nav class = "nav fixed"
+        header.style.marginTop = "240px"; //set header margin-top to 240px so it doesn't jump when the nav element changes to position: fixed
+    }
+}
+
+
+    //don't do anything JS wise until DOM has been loaded
+    document.addEventListener("DOMContentLoaded", function() {
+    
+        document.addEventListener("scroll", stickyNav, false); //add event listener to DOM for scroll
+
+    }, false);
+</script>
+
+<style type="text/css">
+
+h1 {
+    font-family: $serif
+    font-size: 3.7em
+    font-weight: normal
+    margin-bottom: 40px
+}
+
+.header-subtitle {
+    font-family: $marvel
+    font-size: 2em
+    @include animation-delay(.5s)
+}
+
+.nav ul
+    float: right
+    margin-top: 40px
+
+.nav ul li
+    list-style: none
+    display: inline-block
+    font-family: $abel
+    font-size: 1.3em
+    margin-right: 25px
+
+.nav.fixed
+    position: fixed
+    z-index: 2
+    width: 100%
+    background-color: white
+    box-shadow: #666 0px -3px 10px
+
+.nav.fixed ul {
+    margin-top: 0
+}
+
+.nav.fixed ul li {
+    font-size: 1.1em
+}
+
+.header {
+    float: left
+    max-width: 750px
+    margin: 150px 0 230px 170px
+}
+
+.header a {
+    border-bottom: 1px solid black
+}
+
+.header a:hover {
+    border-bottom: 1px solid $link-hover
+}
+</style>
