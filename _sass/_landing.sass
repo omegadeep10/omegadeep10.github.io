@@ -1,0 +1,230 @@
+//Defining background images of each section
+.swords
+    background-image: url("/assets/landing/sword-home.png")
+
+.tic-tac-toe
+    background-image: url("/assets/landing/tictactoe.png")
+
+.calculator
+    background-image: url("/assets/landing/calc.png")
+
+
+//GENERAL STYLES
+.wrap
+    +outer-container
+    position: relative
+    padding: em(20px)
+
+.section-heading
+    font-family: $section-heading
+    font-size: em(55px)
+    text-transform: uppercase
+    opacity: .05
+    position: absolute
+    right: 15px
+    text-align: right
+    z-index: 0
+
+h1
+    font-family: $heading
+    font-size: em(40px)
+    font-weight: normal
+    color: $font-gray
+
+h2
+    font-family: $heading
+    font-weight: normal
+    color: white
+    font-size: em(20px)
+
+p
+    font-family: $paragraph
+    font-size: em(17px)
+    line-height: em(22px)
+    color: $font-gray
+
+.button
+    font-family: $section-heading
+    font-size: em(16px)
+    text-transform: uppercase
+    padding: em(10px) em(20px)
+    background-color: $main
+    color: white
+    text-decoration: none
+    display: inline-block
+    position: relative
+    border-radius: em(2px)
+
+
+//ABOUT SECTION
+.about
+    background-color: $section-bg
+    
+    //light purple rectangle
+    h1:after
+        content: ""
+        position: absolute
+        bottom: 0
+        left: em(17px)
+        width: em(35px)
+        height: em(110px)
+        background-color: $main
+        opacity: .05
+    
+    p
+        max-width: em(400px)
+    
+    .description
+        padding: em(110px) 0 em(25px) 0
+    
+    //navigation positioning & styling
+    nav
+        float: right
+        margin-right: em(3px)
+        margin-top: em(12px)
+        //keep it above section heading ("ABOUT ME")
+        position: relative
+        z-index: 1
+
+    ul
+        list-style: none
+
+    li
+        display: inline-block
+        margin: 0 em(8px) 0 0
+        font-size: em(17px)
+        font-family: $paragraph
+        font-weight: 700
+
+    a
+        color: $font-gray
+        text-decoration: none
+        padding-bottom: em(5px)
+
+        &:hover
+            color: $main
+            border-bottom: 2px solid $main
+
+
+
+//THE PORTFOLIO ITEM SECTIONS
+.portfolio-item
+    position: relative
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+
+    .section-heading
+        color: white
+        opacity: .2
+
+    h2:after
+        content: ""
+        background-color: $main
+        width: em(75px)
+        height: 3px
+        display: block
+        margin-top: em(20px)
+        margin-bottom: em(20px)
+
+    .description
+        padding: em(50px) 0
+    
+    p
+        color: white
+        font-size: em(15px)
+        line-height: em(24px)
+
+    .button
+        margin-top: em(20px)
+
+    .wrap
+        position: relative
+        z-index: 2
+
+    &:after
+        content: ""
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        z-index: 1
+        background-color: rgba(0, 0, 0, .7)
+
+
+
+
+//VIEW ALL PROJECTS SECTION
+.view-all
+    background-color: $main-dark
+    padding: em(30px)
+    text-align: center
+
+
+
+//BLOG SECTION
+.blog
+    background-color: $section-bg
+
+    .articles
+        padding: em(5px) 0 em(20px) 0
+
+    h3
+        font-family: $section-heading
+        font-weight: normal
+        text-transform: uppercase
+        color: $font-gray
+        font-size: em(20px)
+
+        &:after
+            content: ""
+            background-color: $main
+            width: em(75px)
+            height: 3px
+            display: block
+            margin-top: em(20px)
+            margin-bottom: em(25px)
+
+    .article-link
+        display: block
+        text-decoration: none
+        font-family: $paragraph
+        color: $font-gray
+        margin: em(18px) 0
+        font-size: em(16px)
+
+        &:hover
+            color: $main
+
+    .button
+        margin-top: em(30px)
+
+
+//FOOTER SECTION
+footer
+    background-color: #292929
+
+    .mail
+        text-transform: uppercase
+        color: $main
+        text-decoration: none
+        font-family: $section-heading
+        font-size: em(18px)
+
+    ul
+        list-style: none
+        padding: 0
+        margin: em(7px) 0 0 0
+
+    li
+        display: inline-block
+        color: white
+        margin: 0 em(10px) 0 0
+
+        a
+            color: white
+            font-family: $section-heading
+            text-transform: uppercase
+            text-decoration: none
+            font-size: em(14px)

@@ -11,66 +11,17 @@
 //max-width used by neat
 $max-width: em(1280px)
 
+//fonts
 $section-heading: "leaguespartan-bold", "Impact", sans-serif
 $heading: "Oswald", "Helvetica", sans-serif
 $paragraph: "Lato", "Georgia", serif
 
+//colors
 $font-gray: #313131
+$section-bg: #f4f4f4
 $main: #ec008c
+$main-dark: #691e49
 
 
-.container
-    @include outer-container
-    position: relative
-    padding: em(20px)
 
-.section-heading
-    font-family: $section-heading
-    font-size: em(55px)
-    text-transform: uppercase
-    opacity: .07
-    position: absolute
-    right: 15px
-    text-align: right
-    z-index: 0
-
-h1
-    font-family: $heading
-    font-size: em(40px)
-    font-weight: normal
-
-h2
-    font-family: $heading
-    font-size: em(15px)
-
-p
-    font-family: $paragraph
-    font-size: em(17px)
-    line-height: em(22px)
-
-header
-    nav
-        float: right
-        margin-right: em(3px)
-        position: relative
-        z-index: 1
-
-    ul
-        list-style: none
-        margin-top: em(27px)
-
-        li
-            display: inline-block
-            margin: 0 em(8px) 0 0
-            font-size: em(17px)
-            font-family: $paragraph
-            font-weight: 700
-
-        a
-            color: $font-gray
-            text-decoration: none
-            padding-bottom: em(5px)
-
-            &:hover
-                color: $main
-                border-bottom: 2px solid $main
+@import landing
