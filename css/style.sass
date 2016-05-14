@@ -1,181 +1,76 @@
 ---
 ---
-
 //Setup
 @import bourbon/bourbon
+@import neat/neat
+@import normalize
 
-*
-    margin: 0
-    padding: 0
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
-    box-sizing: border-box
+//set up the custom League Spartan bold font used in the section headings
+@include font-face("leaguespartan-bold", "fonts/leaguespartan-bold-webfont")
 
-.clearfix:after
-    content: ""
-    display: table
-    clear: both
+//max-width used by neat
+$max-width: em(1280px)
 
-/*Color palette*/
-$link-hover: #00aeef
-$post-info: #5a5959
-$section-gray: #ebebeb
+$section-heading: "leaguespartan-bold", "Impact", sans-serif
+$heading: "Oswald", "Helvetica", sans-serif
+$paragraph: "Lato", "Georgia", serif
 
-/*Font Stacks*/
-$serif: 'Cardo', Georgia, sans-serif
-$marvel: 'Marvel', Arial, sans-serif
-$abel: 'Abel', Helvetica, sans-serif
+$font-gray: #313131
+$main: #ec008c
 
-//FadeInUp Animation
-.fadeInUp
-    @include animation-name(fadeInUp)
-    @include animation-duration(1s)
-    @include animation-fill-mode(both)
 
-@include keyframes(fadeInUp)
-    from
-        opacity: 0
-        @include transform(translateY(50px))
-
-    to
-        opacity: 1
-        @include transform(translateY(0))
-
-//END Setup
-
-//General Styles
-
-//wrapper for content
-.content
-    display: block
-    margin: 0 auto
-    max-width: 1280px
-    padding: 20px 55px
-
-//Reserved for giant headings at the top of each page
-h1
-    font-family: $serif
-    font-size: 3.7em
-    font-weight: normal
-    margin-bottom: 40px
-
-//subtitle for the giant headings
-.header-subtitle
-    font-family: $marvel
-    font-size: 2em
-    @include animation-delay(.5s)
-
-//Section titles (Work, Blog, Contact, etc)
-h2
-    font-family: $abel
-    font-size: 1.8em
-    font-weight: normal
-    margin-bottom: 30px
-
-//Thumbnail information titles
-h3
-    font-family: $abel
-    font-size: 1.5em
-    color: white
-    font-weight: normal
-
-    &:after
-        content: ""
-        display: block
-        width: 5px
-        height: 1px
-        margin: 10px auto
-        background: #888
-        @include transition(all .5s ease-in-out)
-
-//thumbnail information subtitles
-.subtitle
-    font-size: 1em
-    color: #888
-    margin: 10px 0 0 0
-
-//links
-a
-    text-decoration: none
-    color: black
-    @include transition(all .3s ease-in-out)
-
-    &:hover
-        cursor: pointer
-        color: $link-hover
-
-//buttons
-.button
-    text-decoration: none
-    font-size: 1.3em
-    font-family: $abel
-    padding: 7px 20px
-    color: black
-    border: 1px solid black
-    border-radius: 3px
-    @include transition(all .3s ease-in-out)
-
-    &:hover
-        color: $link-hover
-        border-color: $link-hover
-
-//Homemade Crappy Grid
-
-.grid-item
-    float: left
+.container
+    @include outer-container
     position: relative
-    @include transition(all .2s ease-in-out)
+    padding: em(20px)
 
-    &:hover
+.section-heading
+    font-family: $section-heading
+    font-size: em(55px)
+    text-transform: uppercase
+    opacity: .07
+    position: absolute
+    right: 15px
+    text-align: right
+    z-index: 0
+
+h1
+    font-family: $heading
+    font-size: em(40px)
+    font-weight: normal
+
+h2
+    font-family: $heading
+    font-size: em(15px)
+
+p
+    font-family: $paragraph
+    font-size: em(17px)
+    line-height: em(22px)
+
+header
+    nav
+        float: right
+        margin-right: em(3px)
+        position: relative
         z-index: 1
-        @include transform(scale(1.03))
-        box-shadow: #222 0px 3px 7px
 
-    img
-        width: 100%
+    ul
+        list-style: none
+        margin-top: em(27px)
 
-    .info
-        opacity: 0
-        background: rgba(0, 0, 0, .8)
-        position: absolute
-        padding: 0 40px
-        top: 0
-        bottom: 0
-        left: 0
-        right: 0
-        font-family: $abel
-        text-align: center
-        @include transition(all .3s ease-in-out)
-
-        &:hover
-            opacity: 1.0
-        
-        //animating the little line under the h3 to expand
-        &:hover h3:after
-            width: 25px
+        li
+            display: inline-block
+            margin: 0 em(8px) 0 0
+            font-size: em(17px)
+            font-family: $paragraph
+            font-weight: 700
 
         a
-            color: #888
-            border-bottom: 1px solid #888
+            color: $font-gray
+            text-decoration: none
+            padding-bottom: em(5px)
 
             &:hover
-                color: $link-hover
-                border-bottom: 1px solid $link-hover
-
-.col-1
-    width: 33%
-
-.col-2
-    width: 66%
-
-.col-3
-    width: 99%
-
-//END Homemade Grid
-
-//END General Styles
-
-@import landing
-@import portfolio-page
-@import blog
-@import media-queries
+                color: $main
+                border-bottom: 2px solid $main

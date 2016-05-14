@@ -1,9 +1,9 @@
 
-# Site settings
-title: Deep Patel | Portfolio
+# Site settings (used in header)
+title: Deep Patel
 description: >
-    This is Deep Patel's personal website. View my projects, android themes,
-    and read my Kustom tutorials here.
+    Deep Patel is a full-time student and web developer. He creates
+    websites, JavaScript apps, and more.
 baseurl: ""
 
 # Build settings

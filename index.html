@@ -1,71 +1,43 @@
 ---
-layout: default
-
-title: Deep Patel | Portfolio
-
-header-title: Hi, I'm Deep Patel.
-header-subtitle: I am a college student in Georgia who likes to make websites, javascript apps, android themes, and more.
-
-links:
-  - title: Work
-    url: "#work"
-  - title: Blog
-    url: "#blog"
-  - title: Contact
-    url: "#contact"
-  - title: About
-    url: "#about"
 ---
 
-<div id="work">
-  <div class="content clearfix">
-    <h2>Work</h2>
-    
-    <div class="img-grid clearfix">
+<!DOCTYPE html>
+<html lang="en">
 
-      {% for thumbnail in site.data.portfolio %}
-      <div class="grid-item {{ thumbnail.size }}">
-        <img class="lazyload" data-src="{{ thumbnail.image_url }}" alt="{{ thumbnail.title }} - {{ thumbnail.subtitle }}" style="{{ thumbnail.style }}">
-        <a href="{{ thumbnail.link }}">
-          <div class="info">
-            <h3>{{ thumbnail.title }}</h3>
-            <p class="subtitle">{{ thumbnail.subtitle }}</p>
-          </div>
-        </a>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <title>{{ site.title }}</title>
+
+    <!--CSS/JS-->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald|Lato:400,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <header class="about">
+      <div class="container">
+
+        <span class="section-heading">About Me</span>
+
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="description">
+          <h1>Hi, I'm Deep Patel.</h1>
+          <p>I’m a full-time student currently living in Georgia. I design and develop websites, JavaScript Apps, and other fun stuff on the side.</p>
+        </div>
+
       </div>
-      {% endfor %}
+    </header>
+  </body>
 
-    </div>
-    
-  </div>
-</div>
-
-<div id="blog">
-  <div class="content clearfix">
-    <h2>Blog</h2>
-
-    {% for post in site.posts limit: 5 %}
-    <div class="blog-post">
-      <span id="triangle-right"></span>
-      <div class="post">
-        <a href="{{ post.url }}" class="post-title">{{ post.header-title }}</a>
-        <p class="post-info">Posted {{ post.date | date: '%B %d, %Y' }} in 
-        
-        {% capture tags %}
-          {% for tag in post.tags %}
-            {{ tag }}
-          {% endfor %}
-        {% endcapture %}
-        {% assign sortedtags = tags | split:',' | sort %}
-
-          {% for tag in sortedtags %} 
-            <span class="tag">{{ tag }}</span> 
-          {% endfor %}</p>
-      </div>
-    </div>
-    {% endfor %}
-
-    <a href="/posts" class="button">All Posts</a>
-
-  </div>
-</div>
+</html>
