@@ -22,6 +22,22 @@ $section-bg: #f4f4f4
 $main: #ec008c
 $main-dark: #691e49
 
+//media queries breakpoints
+@mixin large-phone
+    @media only screen and (min-width: em(500px))
+        @content
+
+@mixin tablet
+    @media only screen and (min-width: em(768px))
+        @content
+
+@mixin large-tablet
+    @media only screen and (min-width: em(900px))
+        @content
+
+@mixin desktop
+    @media only screen and (min-width: em(1200px))
+        @content
 
 
 @import landing

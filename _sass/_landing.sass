@@ -1,11 +1,14 @@
-//Defining background images of each section
+//Defining background images/colors of each section
 .swords
+    background-color: #440e62
     background-image: url("/assets/landing/sword-home.png")
 
 .tic-tac-toe
+    background-color: #001c23
     background-image: url("/assets/landing/tictactoe.png")
 
 .calculator
+    background-color: #292929
     background-image: url("/assets/landing/calc.png")
 
 
@@ -15,15 +18,25 @@
     position: relative
     padding: em(20px)
 
+    +large-phone
+        padding: em(40px)
+
 .section-heading
     font-family: $section-heading
     font-size: em(55px)
     text-transform: uppercase
     opacity: .05
     position: absolute
-    right: 15px
+    right: em(5px)
     text-align: right
     z-index: 0
+
+    +large-phone
+        font-size: em(65px)
+        right: em(10px)
+
+    +desktop
+        font-size: em(75px)
 
 h1
     font-family: $heading
@@ -31,17 +44,49 @@ h1
     font-weight: normal
     color: $font-gray
 
+    +large-phone
+        font-size: em(50px)
+
+    +desktop
+        font-size: em(60px)
+
 h2
     font-family: $heading
     font-weight: normal
     color: white
     font-size: em(20px)
 
+    &:after
+        content: ""
+        background-color: $main
+        width: em(75px)
+        height: 3px
+        display: block
+        margin-top: em(20px)
+        margin-bottom: em(20px)
+
+        +large-phone
+            width: em(150px)
+            margin: em(16px) 0 em(16px) 0
+
+    +large-phone
+        font-size: em(30px)
+
+    +desktop
+        font-size: em(35px)
+
 p
     font-family: $paragraph
     font-size: em(17px)
     line-height: em(22px)
     color: $font-gray
+
+    +large-phone
+        font-size: em(20px)
+        line-height: em(26px)
+
+    +desktop
+        font-size: em(22px)
 
 .button
     font-family: $section-heading
@@ -55,10 +100,15 @@ p
     position: relative
     border-radius: em(2px)
 
+    +large-phone
+        font-size: em(16px)
+        padding: em(14px) em(26px)
+
 
 //ABOUT SECTION
 .about
     background-color: $section-bg
+    position: relative
     
     //light purple rectangle
     h1:after
@@ -70,21 +120,50 @@ p
         height: em(110px)
         background-color: $main
         opacity: .05
+
+        +large-phone
+            width: em(2px)
+            opacity: 1
+            left: 0
+            height: 100%
+
+        +desktop
+            width: em(1.5px)
     
     p
         max-width: em(400px)
+
+        +large-phone
+            max-width: em(350px)
+
+        +desktop
+            max-width: em(400px)
     
     .description
         padding: em(110px) 0 em(25px) 0
+
+        +large-phone
+            position: relative
+            padding: 0 em(20px) 0 em(50px)
+            margin: em(160px) 0 em(75px) 0
+
+        +desktop
+            margin: em(100px) 0 em(400px) 0
     
     //navigation positioning & styling
     nav
         float: right
-        margin-right: em(3px)
         margin-top: em(12px)
+        margin-right: em(5px)
         //keep it above section heading ("ABOUT ME")
         position: relative
         z-index: 1
+
+        +large-phone
+            margin: em(20px) em(25px) 0 0
+
+        +desktop
+            margin: em(25px) em(30px) 0 0
 
     ul
         list-style: none
@@ -96,6 +175,13 @@ p
         font-family: $paragraph
         font-weight: 700
 
+        +large-phone
+            margin-right: em(15px)
+            font-size: em(18px)
+
+            &:last-child
+                margin-right: 0
+
     a
         color: $font-gray
         text-decoration: none
@@ -105,6 +191,45 @@ p
             color: $main
             border-bottom: 2px solid $main
 
+    .graphs
+        position: absolute
+        bottom: -4px
+        right: 0
+        z-index: 0
+        display: none
+
+        +desktop
+            display: block
+
+    .graph-item
+        display: inline-block
+        margin-right: 40px
+        width: 100px
+        background-color: #e1e1e1
+        position: relative
+
+        &:hover
+            background-color: $main
+
+        &:after
+            content: attr(data-tooltip)
+            position: absolute
+            background-color: $main-dark
+            display: inline
+            text-align: center
+            color: white
+            right: 20%
+            font-family: $paragraph
+            text-transform: uppercase
+            white-space: nowrap
+            z-index: 2
+            top: 20px
+            padding: em(10px) em(20px)
+            font-size: em(14px)
+            visibility: hidden
+
+        &:hover:after
+            visibility: visible
 
 
 //THE PORTFOLIO ITEM SECTIONS
@@ -114,33 +239,55 @@ p
     background-repeat: no-repeat
     background-position: center center
 
+    +large-tablet
+        background-image: none
+    
+    .wrap
+        position: relative
+        z-index: 2
+
     .section-heading
         color: white
         opacity: .2
 
-    h2:after
-        content: ""
-        background-color: $main
-        width: em(75px)
-        height: 3px
-        display: block
-        margin-top: em(20px)
-        margin-bottom: em(20px)
+    .description-container
+        padding: em(75px) 0
+        +outer-container
 
     .description
-        padding: em(50px) 0
+
+        +large-tablet
+            +span-columns(6)
+            +shift(1)
+
+            h2
+                margin-top: 0
+
+        +desktop
+
+            h2
+                margin-top: em(20px)
     
+    .portfolio-image
+        display: none
+        box-shadow: 0px 0px 250px 0px rgba(0, 0, 0, 0.32)
+
+        +large-tablet
+            +span-columns(5)
+
     p
         color: white
         font-size: em(15px)
         line-height: em(24px)
+        max-width: em(450px)
+
+        +large-phone
+            font-size: em(18px)
+            line-height: em(26px)
 
     .button
         margin-top: em(20px)
 
-    .wrap
-        position: relative
-        z-index: 2
 
     &:after
         content: ""
@@ -150,7 +297,10 @@ p
         top: 0
         bottom: 0
         z-index: 1
-        background-color: rgba(0, 0, 0, .7)
+        background-color: rgba(0, 0, 0, .75)
+
+        +large-tablet
+            display: none
 
 
 
@@ -161,14 +311,53 @@ p
     padding: em(30px)
     text-align: center
 
+    span
+        color: white
+        font-family: $heading
+        font-size: em(25px)
+        margin-right: em(20px)
+        position: relative
+        top: em(3px)
+        display: none
+
+        +tablet
+            display: inline
+
 
 
 //BLOG SECTION
 .blog
     background-color: $section-bg
 
+    +tablet
+        padding-bottom: em(65px)
+
     .articles
         padding: em(5px) 0 em(20px) 0
+
+        +tablet
+            margin-top: em(30px)
+            +span-columns(6)
+
+            .button
+                display: none
+
+    .section-desc
+        display: none
+        padding-left: em(20px)
+
+        h2
+            color: $font-gray
+
+            &:after
+                width: em(80px)
+
+        p
+            font-size: em(18px)
+
+        +tablet
+            margin-top: em(100px)
+            +span-columns(6)
 
     h3
         font-family: $section-heading
@@ -197,6 +386,9 @@ p
         &:hover
             color: $main
 
+        +large-phone
+            font-size: em(17px)
+
     .button
         margin-top: em(30px)
 
@@ -205,12 +397,29 @@ p
 footer
     background-color: #292929
 
+    .section-heading
+        color: white
+        bottom: em(5px)
+        display: none
+
+        +tablet
+            display: block
+
+        +desktop
+            bottom: em(2px)
+
     .mail
         text-transform: uppercase
         color: $main
         text-decoration: none
         font-family: $section-heading
         font-size: em(18px)
+
+        +tablet
+            font-size: em(22px)
+
+        &:hover
+            text-decoration: underline
 
     ul
         list-style: none
@@ -228,3 +437,9 @@ footer
             text-transform: uppercase
             text-decoration: none
             font-size: em(14px)
+
+            +tablet
+                font-size: em(16px)
+
+            &:hover
+                color: $main
