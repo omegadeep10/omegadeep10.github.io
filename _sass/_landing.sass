@@ -99,10 +99,19 @@ p
     display: inline-block
     position: relative
     border-radius: em(2px)
+    +transition(all .2s ease)
+
+    &:hover
+        +transform(scale(1.1))
 
     +large-phone
         font-size: em(16px)
         padding: em(14px) em(26px)
+
+.fadeInRight
+    animation: fadeInRight .3s linear
+    animation-fill-mode: forwards
+
 
 
 //ABOUT SECTION
@@ -141,6 +150,7 @@ p
     
     .description
         padding: em(110px) 0 em(25px) 0
+        animation: fadeInLeft .3s ease-in
 
         +large-phone
             position: relative
@@ -207,6 +217,7 @@ p
         width: 100px
         background-color: #e1e1e1
         position: relative
+        +transition(background-color, .3s, ease-in)
 
         &:hover
             background-color: $main
@@ -227,6 +238,7 @@ p
             padding: em(10px) em(20px)
             font-size: em(14px)
             visibility: hidden
+            box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .3)
 
         &:hover:after
             visibility: visible
@@ -255,6 +267,7 @@ p
         +outer-container
 
     .description
+        opacity: 0
 
         +large-tablet
             +span-columns(6)
@@ -323,6 +336,9 @@ p
         +tablet
             display: inline
 
+    +desktop
+        padding: em(50px)
+
 
 
 //BLOG SECTION
@@ -341,6 +357,9 @@ p
 
             .button
                 display: none
+
+        +desktop
+            +span-columns(5)
 
     .section-desc
         display: none
@@ -380,7 +399,7 @@ p
         text-decoration: none
         font-family: $paragraph
         color: $font-gray
-        margin: em(18px) 0
+        padding: em(16px) 0
         font-size: em(16px)
 
         &:hover
@@ -388,6 +407,9 @@ p
 
         +large-phone
             font-size: em(17px)
+
+        +desktop
+            font-size: em(20px)
 
     .button
         margin-top: em(30px)
