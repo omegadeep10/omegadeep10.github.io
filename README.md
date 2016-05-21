@@ -1,12 +1,12 @@
 # omegadeep10.github.io
 omegadeep10's website with blog posts, articles, news, portfolio, contact information and more.
 
-##To-Do
+Future Reference because I will forget why/how I set this up:
 
-- [x] Minify images
-- [ ] Add animations using animate.css and wow.js
-- [ ] Add "active" state to nav depending on current section
-- [x] ~~Minify & concatenate JS/CSS/HTML with Grunt/Gulp~~ *Github does this already apparently?*
-- [x] Make contact form functional using Formspree or other similar service
-- [x] Add disqus comments to blog posts
-- [ ] Add resume design, personal website design to portfolio
+- Don't use the posts folder. Remember, we don't need dates on anything because it shows how infrequently we update the blog.
+- All "posts" go under the articles folder. Each post uses it's
+own layout and design. The posts' accompanying css file can be found
+in /css/articles. This means if you update your portfolio later, your
+posts can just be copy/pasted over.
+- Any assets required by the article are stored in /assets/articles.
+- Using normalize.sass, bourbon, and neat. Keep it updated I suppose.

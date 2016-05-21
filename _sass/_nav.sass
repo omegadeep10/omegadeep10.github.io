@@ -1,0 +1,73 @@
+nav
+    
+    ul
+        list-style: none
+
+    li
+        display: inline-block
+        margin: 0 em(8px) 0 0
+        font-size: em(17px)
+        font-family: $paragraph
+        font-weight: 700
+
+        +large-phone
+            margin-right: em(15px)
+            font-size: em(18px)
+
+            &:last-child
+                margin-right: 0
+
+    a
+        color: $font-gray
+        text-decoration: none
+        padding-bottom: em(5px)
+        +transition(color, .5s, ease-in)
+
+        &:hover
+            color: $main
+
+            &:after
+                width: 100%
+                visibility: visible
+
+        &:after
+            visibility: hidden
+            content: ""
+            display: block
+            width: 0
+            height: 2px
+            background-color: $main
+            margin-top: em(5px)
+            +transition(width, .3s, linear)
+
+
+.alternate-nav
+    background-color: $section-bg
+
+    .wrap
+        padding: em(5px) em(30px) em(35px) em(30px)
+
+    .container
+        float: right
+        margin-top: em(25px)
+        margin-right: em(38px)
+        //keep it above section heading ("ABOUT ME")
+        position: relative
+        z-index: 1
+
+    .breadcrumb
+        float: left
+        margin: em(43px) 0 0 em(20px)
+
+        a, 
+        span
+            display: inline-block
+            font-size: em(17px)
+            font-family: $paragraph
+            font-weight: 700
+
+            +large-phone
+                font-size: em(22px)
+
+        span
+            margin: 0 em(10px)

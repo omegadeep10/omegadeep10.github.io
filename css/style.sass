@@ -40,5 +40,146 @@ $main-dark: #691e49
         @content
 
 
+
+
+
+
+
+
+
+
+//GENERAL STYLES
+.wrap
+    +outer-container
+    position: relative
+    padding: em(20px)
+
+    +large-phone
+        padding: em(40px)
+
+.section-heading
+    font-family: $section-heading
+    font-size: em(55px)
+    text-transform: uppercase
+    opacity: .05
+    position: absolute
+    right: em(5px)
+    text-align: right
+    z-index: 0
+    +user-select(none)
+
+    +large-phone
+        font-size: em(65px)
+        right: em(10px)
+
+    +desktop
+        font-size: em(75px)
+
+h1
+    font-family: $heading
+    font-size: em(40px)
+    font-weight: normal
+    color: $font-gray
+
+    +large-phone
+        font-size: em(50px)
+
+    +desktop
+        font-size: em(60px)
+
+    //light purple rectangle
+    &:after
+        content: ""
+        position: absolute
+        bottom: 0
+        left: em(17px)
+        width: em(35px)
+        height: em(110px)
+        background-color: $main
+        opacity: .05
+
+        +large-phone
+            width: em(2px)
+            opacity: 1
+            left: 0
+            height: 100%
+
+        +desktop
+            width: em(1.5px)
+
+
+h2
+    font-family: $heading
+    font-weight: normal
+    color: white
+    font-size: em(20px)
+
+    +large-phone
+        font-size: em(30px)
+
+    +desktop
+        font-size: em(35px)
+
+    &:after
+        content: ""
+        background-color: $main
+        width: em(75px)
+        height: 3px
+        display: block
+        margin-top: em(20px)
+        margin-bottom: em(20px)
+
+        +large-phone
+            width: em(150px)
+            margin: em(16px) 0 em(16px) 0
+
+
+p
+    font-family: $paragraph
+    font-size: em(17px)
+    line-height: em(22px)
+    color: $font-gray
+
+    +large-phone
+        font-size: em(20px)
+        line-height: em(26px)
+
+    +desktop
+        font-size: em(22px)
+
+.button
+    font-family: $section-heading
+    font-size: em(16px)
+    text-transform: uppercase
+    padding: em(10px) em(20px)
+    background-color: $main
+    color: white
+    text-decoration: none
+    display: inline-block
+    position: relative
+    border-radius: em(2px)
+    +transition(all .2s ease)
+
+    &:hover
+        +transform(scale(1.1))
+
+    +large-phone
+        font-size: em(16px)
+        padding: em(14px) em(26px)
+
+
+
+.fadeInRight
+    animation: fadeInRight .3s linear
+    animation-fill-mode: forwards
+
+
+
+
+
+
+
 @import animations
+@import nav
+@import footer
 @import landing

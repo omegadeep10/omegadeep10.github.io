@@ -1,0 +1,49 @@
+footer
+    background-color: #292929
+
+    .section-heading
+        color: white
+        bottom: em(5px)
+        display: none
+
+        +tablet
+            display: block
+
+        +desktop
+            bottom: em(2px)
+
+    .mail
+        text-transform: uppercase
+        color: $main
+        text-decoration: none
+        font-family: $section-heading
+        font-size: em(18px)
+
+        +tablet
+            font-size: em(22px)
+
+        &:hover
+            text-decoration: underline
+
+    ul
+        list-style: none
+        padding: 0
+        margin: em(7px) 0 0 0
+
+    li
+        display: inline-block
+        color: white
+        margin: 0 em(10px) 0 0
+
+        a
+            color: white
+            font-family: $section-heading
+            text-transform: uppercase
+            text-decoration: none
+            font-size: em(14px)
+
+            +tablet
+                font-size: em(16px)
+
+            &:hover
+                color: $main
