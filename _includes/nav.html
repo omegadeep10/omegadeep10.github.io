@@ -4,16 +4,19 @@
 
 <nav class="alternate-nav">
   <div class="wrap">
-    <span class="breadcrumb"> <a href="/">{{ site.title }}</a> <span>//</span> <a href=" {{ page.url }}">{{ page.title }}</a></span>
-
     <span class="section-heading">Project</span>
     
-    <div class="container">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+    <span class="breadcrumb"> <a href="/">{{ site.title }}</a> <span>//</span> <a href=" {{ page.url }}">{{ page.title }}</a></span>
+    <span id="open-menu" class="menu-icon">☰</span>
+
+    <div id="menu" class="container">
+        <span id="close-menu" class="menu-close">✕</span>
+        <ul id="menu-container">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </div>
   </div>

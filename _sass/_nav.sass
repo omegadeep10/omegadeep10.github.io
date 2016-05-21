@@ -45,19 +45,95 @@ nav
     background-color: $section-bg
 
     .wrap
-        padding: em(5px) em(30px) em(35px) em(30px)
+        padding: em(5px) em(30px) em(20px) em(30px)
+
+        +desktop
+            padding: 0 em(30px) em(35px) em(30px)
+
+    ul
+        margin: 0
+        padding: 0
+        clear: both
+
+    li
+        display: block
+        margin-top: em(10px)
+        opacity: 0
+
+        +large-tablet
+            display: inline-block
+            opacity: 1
 
     .container
+        position: absolute
+        right: -100vw
+        top: 0
+        background-color: $section-bg
+        height: 100vh
+        width: 100vw
+        z-index: 1
+        padding: em(20px) em(40px)
+        +transition(all, .3s, ease-in)
+
+        +large-tablet
+            display: block
+            float: right
+            margin: em(30px) em(35px) 0 0
+            padding: 0
+            position: relative
+            right: 0
+            z-index: 1
+            height: auto
+            width: auto
+            background-color: initial
+            border: none
+
+        +desktop
+            margin-top: em(33px)
+
+        .menu-close
+            float: left
+            display: block
+            margin: 0 0 em(10px) 0
+            font-size: em(30px)
+            cursor: pointer
+
+            +large-tablet
+                display: none
+
+    .container.open
+        right: 0
+
+
+
+    .menu-icon
+        color: $font-gray
+        display: block
         float: right
-        margin-top: em(25px)
-        margin-right: em(38px)
-        //keep it above section heading ("ABOUT ME")
+        font-size: em(30px)
+        margin: em(8px) em(10px) 0 0
+        cursor: pointer
         position: relative
         z-index: 1
 
+        +large-phone
+            margin-top: em(15px)
+
+        +large-tablet
+            display: none
+
     .breadcrumb
         float: left
-        margin: em(43px) 0 0 em(20px)
+        display: none
+        position: relative
+        z-index: 1
+
+        +large-phone
+            display: inline-block
+            margin: em(35px) 0 0 em(20px)
+
+        +desktop
+            margin-top: em(40px)
 
         a, 
         span
@@ -67,6 +143,9 @@ nav
             font-weight: 700
 
             +large-phone
+                font-size: em(20px)
+
+            +tablet
                 font-size: em(22px)
 
         span

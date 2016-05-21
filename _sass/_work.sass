@@ -1,0 +1,58 @@
+.title
+    padding: em(10px) 0 em(80px) 0
+    animation: fadeInLeft .3s ease-in
+
+    h1:after
+        display: none
+
+    +large-phone
+        position: relative
+        padding: 0 0 0 em(50px)
+        margin: em(20px) 0 em(80px) 0
+        max-width: em(850px)
+
+        h1:after
+            display: block
+
+    +desktop
+        margin: em(50px) 0 em(100px) 0
+
+.img-showcase
+    margin: em(20px) 0
+    position: relative
+
+    img
+        max-width: 100%
+
+    .img-text
+        display: none
+        padding: em(80px) em(100px)
+        text-align: left
+        opacity: 0
+        +transition(all, .5s, ease-in)
+
+        +desktop
+            display: block
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            background-color: rgba($main-dark, .9)
+        
+        &:hover
+            opacity: 1
+
+        h1, p
+            max-width: em(300px)
+
+    p
+        margin: em(5px) 0
+        color: rgba(255, 255, 255, .9)
+
+    h2
+        color: white
+        margin: 0 0 em(10px) 0
+        
+        &:after
+            display: none

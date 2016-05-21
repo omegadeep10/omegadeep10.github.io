@@ -17,12 +17,54 @@ description: >
     <!--CSS/JS-->
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald|Lato:400,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="/js/blazy.min.js"></script>
+    <script async type="text/javascript" src="/js/script.js"></script>
   </head>
 
   <body>
     {% include nav.html %}
+    
+    <div class="main-content wrap">
+      <div class="title">
+        <h1>SWORDS Redesign</h1>
+        <p>SWORDS is a course registration, student information, and financial aid management system for students. Unfortunately, it’s difficult to use and understand. For our final project in Interaction Design class, I led a team in examining exactly why people have difficulty using SWORDS by performing an usability analysis. We then used the insight we gained to make recommendations and create mockups and prototypes to test our recommendations.</p>
+      </div>
+
+      <div class="img-showcase">
+        <div class="img-text">
+          <h2>The Login Page</h2>
+          <p>We optimized the login page for simplicity. Our participants had difficulty understanding how to log in, so we made the instructions (and help information) hard to miss.</p>
+        </div>
+        <img class="b-lazy" data-src="/assets/work/swords/login.png" alt="The login page of SWORDS">
+      </div>
+
+      <div class="img-showcase">
+        <div class="img-text">
+          <h2>The Dashboard</h2>
+          <p>We redesigned the home page of SWORDS as a dashboard interface. This is to allow users to jump to any specific section of SWORDs instantly, without having to click through several menus or different pages. It also gives users a "birds-eye" view of SWORDS, which helps prevent confusion.</p>
+        </div>
+        <img class="b-lazy" data-src="/assets/work/swords/dashboard.png" alt="The login page of SWORDS">
+      </div>
+
+      <div class="img-showcase">
+        <div class="img-text">
+          <h2>The Registration Page</h2>
+          <p>A major section of SWORDS that users had difficulty using is the registration page. We used tables to display classes in an efficient, understandable format. A full explanation of this screen can be found in the paper linked below.</p>
+        </div>
+        <img class="b-lazy" data-src="/assets/work/swords/register.png" alt="The login page of SWORDS">
+      </div>
+
+      <div class="img-showcase">
+        <div class="img-text">
+          <h2>Class Details Modal</h2>
+          <p>We discovered that users want to see detailed class information without having to navigate to a different page. To facilitate this, we integrated a modal directly into the registration page.</p>
+        </div>
+        <img class="b-lazy" data-src="/assets/work/swords/modal.png" alt="The login page of SWORDS">
+      </div>
+
+
+    </div>
 
     {% include footer.html %}
   </body>
-
 </html>

@@ -2,61 +2,55 @@ var domReady = function(callback) {
     document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);
 };
 
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
+//Helper function
+function setClass(element, classToSet) {
+    element.className = classToSet;
 }
 
-//StackOverflow User Tokimon - Checks if element is visible.
-//Modified slightly (400 instead of 0)
-function checkVisible(elm) {
-  var rect = elm.getBoundingClientRect();
-  var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-  return !(rect.bottom < 0 || rect.top - viewHeight >= -400);
+//Add job to timeout queue. iterationCounter required so that the
+//timeouts don't fire at the same time. Used by nav items to slide
+//in from the right.
+function doSetTimeout(element, classToSet, iterationCounter) {
+    window.setTimeout(function() {
+        setClass(element, classToSet);
+    }, iterationCounter * 100);
+}
+
+
+
+function animateNavItems(menuItems) {
+    for (var i = 0; i < menuItems.length; i++) {
+        var currentItem = menuItems.item(i);
+        doSetTimeout(currentItem, "fadeInRight", i);      
+    }
+}
+
+function removeAnimationNavItems(menuItems) {
+    for (var i = 0; i < menuItems.length; i++) {
+        var currentItem = menuItems.item(i);
+        setClass(currentItem, "");     
+    }
 }
 
 
 domReady(function(){
-    function randomizeData() {
-        var graphItems = document.getElementsByClassName("graph-item");
-        var changeInterval = getRandomInt(10, 60);
-        
-        //loop through each graph-item and change it randomly
-        for (var i = 0; i < graphItems.length; ++i) {
-            var currentItem = graphItems[i];
-            var height = parseInt(currentItem.style.height, 10);
+    var bLazy = new Blazy();
 
-            //if height greater than maximum allowable height, 50% chance height will decrease
-            if (height > 300 && getRandomInt(1, 100) > 50) {
-                currentItem.style.height = (height-changeInterval).toString() + "px";
-            }
+    var openMenu = document.getElementById("open-menu");
+    var closeMenu = document.getElementById("close-menu");
+    var menu = document.getElementById("menu");
 
-            //if height less than minimum height, 50% chance height will increase
-            else if (height < 70 && getRandomInt(1, 100) > 50) {
-                currentItem.style.height = (height+changeInterval).toString() + "px";
-            }
+    var menuItems = menu.getElementsByTagName("li");
 
-            //if height between min & max, height increases or decreases randomly
-            else if (height >= 70 || height <= 300) {
-                currentItem.style.height = getRandomInt(height-changeInterval, height+changeInterval).toString() + "px";
-            } 
-        }
-    }
+    openMenu.addEventListener("click", function(event) {
+        menu.className = "container open";
+        animateNavItems(menuItems);
+    });
 
-    //get the graph-item container element
-    var graphs = (document.getElementsByClassName("graphs"))[0];
-    //only randomize data is graph is visible (better performance on mobile devices)
-    if (window.getComputedStyle(graphs, null).getPropertyValue("display") !== "none") {
-        window.setInterval(randomizeData, 3000);
-    }
-
-    var descriptions = document.getElementsByClassName("description");
-    window.onscroll = function() {
-        for (var i = 0; i < descriptions.length; i++) {
-            if (checkVisible(descriptions[i])) {
-                if (descriptions[i].className !== "description fadeInRight") {
-                    descriptions[i].className = "description fadeInRight";
-                }
-            }
-        }
-    }
+    closeMenu.addEventListener("click", function(event) {
+        menu.className = "container";
+        window.setTimeout(function() {
+            removeAnimationNavItems(menuItems);
+        }, 300);
+    });
 });
