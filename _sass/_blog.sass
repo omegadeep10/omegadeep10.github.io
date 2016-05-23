@@ -1,0 +1,39 @@
+//BLOG SECTION
+.all-posts
+
+    h3
+        font-family: $section-heading
+        font-weight: normal
+        text-transform: uppercase
+        color: $font-gray
+        font-size: em(20px)
+
+        &:after
+            content: ""
+            background-color: $main
+            width: em(75px)
+            height: 3px
+            display: block
+            margin-top: em(20px)
+            margin-bottom: em(30px)
+
+    .article-link
+        display: block
+        text-decoration: none
+        font-family: $paragraph
+        color: $font-gray
+        padding: em(10px) 0
+        font-size: em(20px)
+        line-height: em(28px)
+
+        &:hover
+            color: $main
+
+        +large-phone
+            font-size: em(20px)
+
+        +desktop
+            font-size: em(22px)
+
+    .button
+        margin-top: em(30px)

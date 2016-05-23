@@ -2,69 +2,49 @@
 title: "SWORDS Redesign"
 description: >
   I redesigned the SWORDS system used by my school to be more usable, more understandable, and provide greater functionality.
+layout: work
+type: project
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<div class="title">
+  <h1>SWORDS Redesign</h1>
+  <p>SWORDS is a course registration, student information, and financial aid management system for students. Unfortunately, it’s difficult to use and understand. For our final project in Interaction Design class, I led a team in examining exactly why people have difficulty using SWORDS by performing an usability analysis. We then used the insight we gained to make recommendations and create mockups and prototypes to test our recommendations.</p>
+</div>
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ page.description }}">
-    <title>{{ page.title }}</title>
+<div class="img-showcase">
+  <div class="img-text">
+    <h2>The Login Page</h2>
+    <p>We optimized the login page for simplicity. Our participants had difficulty understanding how to log in, so we made the instructions (and help information) hard to miss.</p>
+  </div>
+  <img class="b-lazy" data-src="/assets/work/swords/login.png" alt="The login page of SWORDS">
+</div>
 
-    <!--CSS/JS-->
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Oswald|Lato:400,700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="/js/blazy.min.js"></script>
-    <script async type="text/javascript" src="/js/script.js"></script>
-  </head>
+<div class="img-showcase">
+  <div class="img-text">
+    <h2>The Dashboard</h2>
+    <p>We redesigned the home page of SWORDS as a dashboard interface. This is to allow users to jump to any specific section of SWORDs instantly, without having to click through several menus or different pages. It also gives users a "birds-eye" view of SWORDS, which helps prevent confusion.</p>
+  </div>
+  <img class="b-lazy" data-src="/assets/work/swords/dashboard.png" alt="The dashboard interface">
+</div>
 
-  <body>
-    {% include nav.html %}
-    
-    <div class="main-content wrap">
-      <div class="title">
-        <h1>SWORDS Redesign</h1>
-        <p>SWORDS is a course registration, student information, and financial aid management system for students. Unfortunately, it’s difficult to use and understand. For our final project in Interaction Design class, I led a team in examining exactly why people have difficulty using SWORDS by performing an usability analysis. We then used the insight we gained to make recommendations and create mockups and prototypes to test our recommendations.</p>
-      </div>
+<div class="img-showcase">
+  <div class="img-text">
+    <h2>The Registration Page</h2>
+    <p>A major section of SWORDS that users had difficulty using is the registration page. We used tables to display classes in an efficient, understandable format. A full explanation of this screen can be found in the paper linked below.</p>
+  </div>
+  <img class="b-lazy" data-src="/assets/work/swords/register.png" alt="The registration page">
+</div>
 
-      <div class="img-showcase">
-        <div class="img-text">
-          <h2>The Login Page</h2>
-          <p>We optimized the login page for simplicity. Our participants had difficulty understanding how to log in, so we made the instructions (and help information) hard to miss.</p>
-        </div>
-        <img class="b-lazy" data-src="/assets/work/swords/login.png" alt="The login page of SWORDS">
-      </div>
+<div class="img-showcase">
+  <div class="img-text">
+    <h2>Class Details Modal</h2>
+    <p>We discovered that users want to see detailed class information without having to navigate to a different page. To facilitate this, we integrated a modal directly into the registration page.</p>
+  </div>
+  <img class="b-lazy" data-src="/assets/work/swords/modal.png" alt="The class details modal">
+</div>
 
-      <div class="img-showcase">
-        <div class="img-text">
-          <h2>The Dashboard</h2>
-          <p>We redesigned the home page of SWORDS as a dashboard interface. This is to allow users to jump to any specific section of SWORDs instantly, without having to click through several menus or different pages. It also gives users a "birds-eye" view of SWORDS, which helps prevent confusion.</p>
-        </div>
-        <img class="b-lazy" data-src="/assets/work/swords/dashboard.png" alt="The login page of SWORDS">
-      </div>
-
-      <div class="img-showcase">
-        <div class="img-text">
-          <h2>The Registration Page</h2>
-          <p>A major section of SWORDS that users had difficulty using is the registration page. We used tables to display classes in an efficient, understandable format. A full explanation of this screen can be found in the paper linked below.</p>
-        </div>
-        <img class="b-lazy" data-src="/assets/work/swords/register.png" alt="The login page of SWORDS">
-      </div>
-
-      <div class="img-showcase">
-        <div class="img-text">
-          <h2>Class Details Modal</h2>
-          <p>We discovered that users want to see detailed class information without having to navigate to a different page. To facilitate this, we integrated a modal directly into the registration page.</p>
-        </div>
-        <img class="b-lazy" data-src="/assets/work/swords/modal.png" alt="The login page of SWORDS">
-      </div>
-
-
-    </div>
-
-    {% include footer.html %}
-  </body>
-</html>
+<div class="extra">
+  <h2>Extras</h2>
+  <a href="https://onedrive.live.com/redir?resid=4D51DDFAAD3940F5!38929&authkey=!AJZVUKr5N9Rq0x8&ithint=file%2cpdf" class="button">View the Paper</a>
+  <a href="https://invis.io/E87EDRHAJ#/152691580_Login" class="button">View Invision Prototype</a>
+</div>

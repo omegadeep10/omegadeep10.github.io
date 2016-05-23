@@ -7,11 +7,11 @@ function getRandomInt(min, max) {
 }
 
 //StackOverflow User Tokimon - Checks if element is visible.
-//Modified slightly (400 instead of 0)
+//Modified slightly (300 instead of 0)
 function checkVisible(elm) {
   var rect = elm.getBoundingClientRect();
   var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-  return !(rect.bottom < 0 || rect.top - viewHeight >= -400);
+  return !(rect.bottom < 0 || rect.top - viewHeight >= -300);
 }
 
 

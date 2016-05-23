@@ -1,0 +1,11 @@
+- name: "SWORDS Redesign"
+  url: "/work/swords/"
+  image: "/assets/work/swords/dashboard.png"
+
+- name: "Unbeatable Tic-Tac-Toe"
+  url: "/work/tictactoe/"
+  image: "/assets/work/tictactoe/tictactoe.png"
+
+- name: "JavaScript Calculator"
+  url: "/work/calculator/"
+  image: "/assets/work/calculator/calc.png"

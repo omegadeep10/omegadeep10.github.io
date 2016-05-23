@@ -27,7 +27,7 @@
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Work</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="/blog/">Blog</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
@@ -59,7 +59,7 @@
           <div class="description">
             <h2>SWORDS Redesign</h2>
             <p>In this school project, I led a team in redesigning the user interface of SWORDS, which is a student course registration management system (among other things). We  conducted a user task analysis, obtained participant feedback, and created a prototype based on our collected information. We also showcased our project using Invision, which is a tool for simulating interactivity.</p>
-            <a href="/work/swords" class="button">Learn More</a>
+            <a href="/work/swords/" class="button">Learn More</a>
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@
           <div class="description">
             <h2>Unbeatable Tic-Tac-Toe</h2>
             <p>Over spring break, I created a simple command-line based tic-tac-toe game in Python. This game uses a recursive minimax algorithm to determine the best possible move for a given board state. I created this in a few days during my spring break after being inspired by Google’s AlphaGo Project.</p>
-            <a href="#" class="button">Learn More</a>
+            <a href="/work/tictactoe/" class="button">Learn More</a>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@
           <div class="description">
             <h2>JavaScript Calculator</h2>
             <p>I made a simple calculator to learn basic JavaScript. The calculator has a history feature that remembers your last calculation. It has all the expected functions of a calculator, such as addition, multiplication, subtraction, and division. The app features keyboard shortcuts so users do not have to click buttons repeatedly.</p>
-            <a href="#" class="button">Learn More</a>
+            <a href="/work/calculator/" class="button">Learn More</a>
           </div>
         </div>
       </div>
@@ -109,12 +109,9 @@
         
         <div class="articles">
           <h3>Recent Posts</h3>
-          <a href="#" class="article-link">What I learned in Interactive Digital Media.</a>
-          <a href="#" class="article-link">Procrastination - My Mortal Enemy.</a>
-          <a href="#" class="article-link">Making Custom Progress Bars in KLWP.</a>
-          <a href="#" class="article-link">Kustom Overlap/Stack Groups Explained.</a>
-          <a href="#" class="article-link">Starting a blog.</a>
-          <a href="#" class="button">All Posts</a>
+          {% for post in site.data.articles limit:5 %}
+            <a href="{{ post.url }}" class="article-link">{{ post.name }}</a>
+          {% endfor %}
         </div>
 
         <div class="section-desc">

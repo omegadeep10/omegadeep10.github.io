@@ -1,0 +1,14 @@
+---
+title: "Blog"
+description: >
+  Deep Patel's blog posts about pretty much anything.
+layout: blog
+type: blog
+---
+
+<div class="all-posts">
+    <h3>All Posts</h3>
+        {% for post in site.data.articles limit:5 %}
+        <a href="{{ post.url }}" class="article-link">{{ post.name }}</a>
+        {% endfor %}
+</div>

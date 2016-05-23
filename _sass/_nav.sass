@@ -44,6 +44,10 @@ nav
 .alternate-nav
     background-color: $section-bg
 
+    .section-heading
+        top: 0
+
+
     .wrap
         padding: em(5px) em(30px) em(20px) em(30px)
 
@@ -56,7 +60,7 @@ nav
         clear: both
 
     li
-        display: block
+        display: table
         margin-top: em(10px)
         opacity: 0
 
@@ -78,7 +82,7 @@ nav
         +large-tablet
             display: block
             float: right
-            margin: em(30px) em(35px) 0 0
+            margin: em(25px) em(35px) 0 0
             padding: 0
             position: relative
             right: 0
@@ -117,7 +121,7 @@ nav
         z-index: 1
 
         +large-phone
-            margin-top: em(15px)
+            margin-top: em(12px)
 
         +large-tablet
             display: none
@@ -130,7 +134,7 @@ nav
 
         +large-phone
             display: inline-block
-            margin: em(35px) 0 0 em(20px)
+            margin: em(30px) 0 0 em(10px)
 
         +desktop
             margin-top: em(40px)
