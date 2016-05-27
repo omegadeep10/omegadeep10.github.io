@@ -17,6 +17,12 @@ nav
             &:last-child
                 margin-right: 0
 
+        &.mobile-only
+            display: inline-block
+
+            +large-phone
+                display: none
+
     a
         color: $font-gray
         text-decoration: none
