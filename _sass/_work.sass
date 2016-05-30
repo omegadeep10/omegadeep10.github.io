@@ -155,3 +155,38 @@
             background-color: $main
             margin-top: em(5px)
             +transition(width, .3s, linear)
+
+
+.project
+    display: block
+    text-decoration: none
+    padding: em(20px) 0
+    color: $font-gray
+    +transition(all, .2s, ease)
+    opacity: 0
+
+    +large-phone
+        padding: em(10px) 0
+
+    +tablet
+        max-width: em(700px)
+
+    &:hover
+        color: $main
+    
+    h3
+        font-family: $heading
+        font-size: em(24px)
+        font-weight: normal
+        color: inherit
+
+        +large-phone
+            font-size: em(28px)
+
+    p
+        font-family: $paragraph
+        font-size: em(16px)
+        color: inherit
+
+        +large-phone
+            font-size: em(18px)

@@ -7,10 +7,28 @@
         +transform(translateX(0))
 
 
+.fadeInRight
+    animation: fadeInRight .4s ease
+    animation-fill-mode: forwards
+
 +keyframes(fadeInRight)
     from
         opacity: 0
         +transform(translateX(50px))
+    to
+        opacity: 1
+        +transform(translateX(0))
+
+
+
+.fadeInBottom
+    animation: fadeInBottom .4s ease
+    animation-fill-mode: forwards
+
++keyframes(fadeInBottom)
+    from
+        opacity: 0
+        +transform(translateY(50px))
     to
         opacity: 1
         +transform(translateX(0))

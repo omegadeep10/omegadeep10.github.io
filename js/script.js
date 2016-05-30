@@ -2,6 +2,23 @@ var domReady = function(callback) {
     document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);
 };
 
+
+//debounce - Underscore.js via David Walsh 2014 (https://davidwalsh.name/javascript-debounce-function)
+function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+        var context = this, args = arguments;
+        var later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+};
+
 //Helper function
 function setClass(element, classToSet) {
     element.className = classToSet;
@@ -78,11 +95,20 @@ domReady(function(){
     //required to fix bug where mobile menu hides nav offscreen using
     //display:none, but the nav doesn't come back if the user resizes
     //the screen
-    window.onresize = function(event) {
+    window.onresize = debounce(function() {
         if (window.outerWidth >= 900) {
             if (menu.style.display = "none") {
                 menu.style.display = "block";
             }
         }
-    }   
+    }, 250)
+
+
+
+    //animate project entries
+    var projects = document.getElementsByClassName("project");
+    for (var i = 0; i < projects.length; i++) {
+        doSetTimeout(projects[i], "project fadeInBottom", i+1);
+    }
+
 });
