@@ -19,6 +19,7 @@ domReady(function(){
     function randomizeData() {
         var graphItems = document.getElementsByClassName("graph-item");
         var changeInterval = getRandomInt(10, 60);
+        console.log("data changed.");
         
         //loop through each graph-item and change it randomly
         for (var i = 0; i < graphItems.length; ++i) {
@@ -44,8 +45,11 @@ domReady(function(){
 
     //get the graph-item container element
     var graphs = (document.getElementsByClassName("graphs"))[0];
+    console.log(graphs);
     //only randomize data is graph is visible (better performance on mobile devices)
-    if (window.getComputedStyle(graphs, null).getPropertyValue("display") !== "none") {
+    var graphStyles = window.getComputedStyle(graphs);
+    console.log(graphStyles);
+    if (graphStyles.getPropertyValue("display") !== "none") {
         window.setInterval(randomizeData, 3000);
     }
 

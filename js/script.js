@@ -108,7 +108,7 @@ domReady(function(){
     //animate project entries
     var projects = document.getElementsByClassName("project");
     for (var i = 0; i < projects.length; i++) {
-        doSetTimeout(projects[i], "project fadeInBottom", i+1);
+        doSetTimeout(projects[i], "project fadeInBottom", i+5);
     }
 
 });
