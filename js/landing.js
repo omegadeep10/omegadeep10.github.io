@@ -44,12 +44,10 @@ domReady(function(){
     }
 
     //get the graph-item container element
-    var graphs = (document.getElementsByClassName("graphs"))[0];
-    console.log(graphs);
+    var graphs = document.getElementsByClassName("graphs")[0];
+
     //only randomize data is graph is visible (better performance on mobile devices)
-    var graphStyles = window.getComputedStyle(graphs);
-    console.log(graphStyles);
-    if (graphStyles.getPropertyValue("display") !== "none") {
+    if (window.getComputedStyle(graphs).getPropertyValue("display") !== "none") {
         window.setInterval(randomizeData, 3000);
     }
 
