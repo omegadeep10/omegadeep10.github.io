@@ -1,11 +1,13 @@
 ---
 title: "Portfolio - Version 2"
 layout: post
-tags: Development, Design
+tags: Development
 ---
 
+
+<p class="date">{{ page.date | date: '%B %d, %Y' }}</p>
+
 # Portfolio - Version 2
-{{ page.date | date: '%B %d, %Y' }}
 
 
 ## Why?
@@ -35,4 +37,4 @@ Here is the first version of the site.
 ![The Home Page](/assets/articles/portfolio-version-2/home.png)
 
 
-The raw images of the home page, work pages, and blog can be found in [this imgur album](http://imgur.com/a/Qn453)
+The raw images of the home page, work pages, and blog can be found in [this imgur album.](http://imgur.com/a/Qn453)

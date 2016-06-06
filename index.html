@@ -108,8 +108,8 @@
         
         <div class="articles">
           <h3>Recent Posts</h3>
-          {% for post in site.data.articles limit:5 %}
-            <a href="{{ post.url }}" class="article-link">{{ post.name }}</a>
+          {% for post in site.posts limit:5 %}
+            <a href="{{ post.url }}" class="article-link">{{ post.title }}</a>
           {% endfor %}
         </div>
 

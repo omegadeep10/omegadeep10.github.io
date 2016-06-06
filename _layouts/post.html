@@ -18,8 +18,18 @@
   <body>
     {% include nav.html %}
     
+    <div class="post">
+      {{ content }}
+    
+      <div class="post-nav">
+        <span>
+          <a class="{% if page.previous.url %}prev{% else %} disabled{% endif %}" href="{{page.previous.url}}"> Previous</a>//
+          <a class="{% if page.next.url %}next{% else %} disabled{% endif %}" href="{{page.next.url}}">Next</a>
+        </span>
+      </div>
 
-    {{ content }}
+    </div>
+
 
   </body>
 </html>

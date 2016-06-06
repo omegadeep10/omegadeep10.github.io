@@ -1,0 +1,112 @@
+.post
+    max-width: em(700px)
+    margin: 0 auto
+    padding: em(40px) em(20px) em(100px) em(20px)
+
+    +large-phone
+        padding: em(70px) em(40px) em(160px) em(40px)
+
+    .date
+        font-family: $section-heading
+        text-transform: uppercase
+        font-size: em(12px)
+        color: rgba(0, 0, 0, .4)
+        margin-bottom: em(5px)
+
+    h1
+        font-family: $heading
+        font-size: em(26px)
+        font-weight: normal
+        margin-top: 0
+        margin-bottom: em(25px)
+
+        +large-phone
+            font-size: em(30px)
+    
+    h2
+        font-family: $heading
+        font-weight: normal
+        font-size: em(22px)
+        margin: em(18px) 0
+
+        +large-phone
+            font-size: em(25px)
+
+    p
+        line-height: em(26px)
+
+    a
+        color: $main
+        text-decoration: none
+
+        &:hover
+            text-decoration: underline
+
+    ul
+        list-style: none
+        padding-left: em(10px)
+        margin: em(20px) 0
+
+        li
+            margin: em(10px)
+            font-family: $paragraph
+            font-size: em(17px)
+            color: $font-gray
+
+            +large-phone
+                font-size: em(20px)
+
+            +desktop
+                font-size: em(22px)
+    
+    img
+        width: 100%
+        padding: 0
+        margin: em(10px) 0
+
+
+
+.post-nav
+    float: right
+    font-family: $paragraph
+    font-size: em(17px)
+    font-weight: 700
+    color: $font-gray
+
+    +tablet
+        font-size: em(20px)
+
+    +large-tablet
+        margin: em(30px) 0 em(15px) 0
+
+    .disabled
+        cursor: default
+        pointer-events: none
+        color: rgba(0, 0, 0, .4)
+
+    a
+        color: $font-gray
+        margin-left: em(10px)
+        text-decoration: none
+        display: inline-block
+        
+        &:not(:last-child)
+            margin-right: em(10px)
+
+        &:hover
+            color: $main
+            text-decoration: none
+
+            &:after
+                width: 100%
+                visibility: visible
+
+        &:after
+            visibility: hidden
+            content: ""
+            display: block
+            width: 0
+            height: 2px
+            background-color: $main
+            margin-top: em(5px)
+            +transition(width, .3s, linear)

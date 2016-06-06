@@ -108,7 +108,13 @@ domReady(function(){
     //animate project entries
     var projects = document.getElementsByClassName("project");
     for (var i = 0; i < projects.length; i++) {
-        doSetTimeout(projects[i], "project fadeInBottom", i+5);
+        doSetTimeout(projects[i], "project fadeInBottom", i+3);
+    }
+
+    //animate project entries
+    var articles = document.getElementsByClassName("article-link");
+    for (var i = 0; i < articles.length; i++) {
+        doSetTimeout(articles[i], "article-link fadeInBottom", i+3);
     }
 
 });
