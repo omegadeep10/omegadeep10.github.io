@@ -2,6 +2,7 @@
 title: "Portfolio - Version 2"
 layout: post
 tags: Development
+type: Post
 ---
 
 
