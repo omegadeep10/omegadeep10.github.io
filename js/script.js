@@ -55,7 +55,12 @@ function removeAnimationNavItems(menuItems) {
 
 domReady(function(){
     //initialize lazy-loader
-    var bLazy = new Blazy();
+    try {
+        var bLazy = new Blazy();
+    }
+    catch(error) {
+        console.log(error.message);
+    }
 
     //grab navigaton elements
     var openMenu = document.getElementById("open-menu"); //hamburger button
