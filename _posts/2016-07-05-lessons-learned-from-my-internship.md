@@ -2,13 +2,12 @@
 title: Lessons Learned From My Internship
 date: '2016-07-05 14:20:00'
 layout: post
-draft: true
 ---
 <p class="date">{{ page.date | date: '%B %d, %Y' }}</p>
 
-#Lessons Learned From My Internship.
+# Lessons Learned From My Internship.
 
-I have been working at [Southern Trust Insurance](http://www.stins.com/) since April. This is a paid internship where I was tasked with updating their website. As you can see from the image above, it is fairly outdated, both in terms of the code base and design. It's been roughly 3 months since I started, and I've learned a lot from working there. In this post, I'll summarize my experience at Southern Trust.
+I have been working at [Southern Trust Insurance](http://www.stins.com/) since April. This is a paid internship where I was tasked with updating their website. As you can see from the link above, it is fairly outdated, both in terms of the code base and design. It's been roughly 3 months since I started, and I've learned a lot from working there. In this post, I'll summarize my experience at Southern Trust.
 
 ## The Interview.
 
@@ -26,6 +25,4 @@ So a few weeks after the interview, I was notified that I had the job. I started
 
 I was setup with a computer, and given the task to work on the website. That statement was very broad, and I was given a lot of leeway in how I approached the task. My manager told me what they liked and disliked about the current website and what they wanted to add. Based on this information, I started thinking about how I could create a site to meet those requirements.
 
-## First Month.
-
-I 
+I will be adding more to this post later.
