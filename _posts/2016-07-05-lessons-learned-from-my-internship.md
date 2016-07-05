@@ -22,4 +22,10 @@ I also asked them a few questions about company culture, long-term company goals
 
 ## First Day Of Work.
 
-So a few weeks later, I was notified that I had the job. I started a week after I was notified. On the first day, I was led through and notified
+So a few weeks after the interview, I was notified that I had the job. I started a week later. On the first day, I was given a tour of the IT department, with a brief overview of how the various systems work, what the IT department is working on, and what I'm supposed to be doing. A lot of this information went over my head, but it really helped me get a big picture view the IT office, and how I fit into that.
+
+I was setup with a computer, and given the task to work on the website. That statement was very broad, and I was given a lot of leeway in how I approached the task. My manager told me what they liked and disliked about the current website and what they wanted to add. Based on this information, I started thinking about how I could create a site to meet those requirements.
+
+## First Month.
+
+I 
