@@ -144,6 +144,24 @@ nav
 
         +desktop
             margin-top: em(40px)
+        
+        .page-title
+            
+            +large-phone
+                display: inline-block
+                max-width: 200px
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+            
+            +tablet
+                max-width: 400px
+            
+            +large-tablet
+                max-width: none
+                white-space: normal
+                overflow: visible
+                text-overflow: clip
 
         a, 
         span
@@ -151,6 +169,7 @@ nav
             font-size: em(17px)
             font-family: $paragraph
             font-weight: 700
+            vertical-align: top
 
             +large-phone
                 font-size: em(20px)
