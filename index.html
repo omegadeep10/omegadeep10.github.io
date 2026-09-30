@@ -17,10 +17,9 @@
     .mark { width: 36px; height: 3px; margin-bottom: 36px; background: var(--accent); }
     h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(48px, 11vw, 80px); line-height: 1.08; font-weight: 400; letter-spacing: -0.045em; }
     address { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); font-style: normal; }
-    a { display: inline-flex; align-items: center; gap: 18px; min-height: 44px; max-width: 100%; color: var(--muted); font-size: 17px; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+    a { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; color: var(--muted); font-size: 17px; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
     a:hover { color: var(--ink); }
     a:focus-visible { outline: 2px solid var(--accent); outline-offset: 7px; border-radius: 2px; }
-    .arrow { flex: none; font-size: 22px; text-decoration: none; }
     @media (prefers-color-scheme: dark) {
       :root { --paper: #202622; --ink: #f1efe7; --muted: #c2c9c0; --accent: #c69a77; --line: #414b43; }
     }
@@ -35,7 +34,7 @@
     <div class="mark" aria-hidden="true"></div>
     <h1 id="name">Deep Patel</h1>
     <address>
-      <a href="mailto:hello@deeppatel.me"><span>hello@deeppatel.me</span><span class="arrow" aria-hidden="true">↗</span></a>
+      <a href="mailto:hello@deeppatel.me"><span>hello@deeppatel.me</span></a>
     </address>
   </main>
 </body>
