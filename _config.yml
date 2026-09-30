@@ -1,13 +1,20 @@
-
-# Site settings (used in header)
+# Publish only the self-contained business card and existing domain mapping.
 title: Deep Patel
-description: >
-    Deep Patel is a full-time student and web developer. He creates
-    websites, JavaScript apps, and more.
-baseurl: ""
-
-# Build settings
-exclude: ["README.md", "default site", "portfolio.sublime-project", "portfolio.sublime-workspace", "originals"]
-permalink: /blog/:title/
-gems:
-  - jekyll-sitemap
+description: "Deep Patel. Get in touch."
+exclude:
+  - README.md
+  - "default site"
+  - portfolio.sublime-project
+  - portfolio.sublime-workspace
+  - originals
+  - _posts
+  - _includes
+  - _layouts
+  - _sass
+  - assets
+  - blog.html
+  - work.html
+  - work
+  - css
+  - js
+plugins: []

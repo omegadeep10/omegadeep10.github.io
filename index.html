@@ -1,151 +1,42 @@
----
----
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.description }}">
-    <title>{{ site.title }}</title>
-
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-
-    <!--CSS/JS-->
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Oswald|Lato:400,700' rel='stylesheet' type='text/css'>
-    <script async type="text/javascript" src="/js/min/smoothscroll.min.js"></script>
-    <script async type="text/javascript" src="/js/min/lazysizes.min.js"></script>
-
-    <!--Google Analytics-->
-    {% include analytics.html %}
-  </head>
-
-  <body>
-    <header class="about">
-      <div class="wrap">
-
-        <span class="section-heading">About Me</span>
-
-        <nav>
-          <ul>
-            <li><a href="/work/">Work</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="description">
-          <h1>Hi, I'm Deep Patel.</h1>
-          <p>I’m a full-time student currently living in Georgia. I design and develop websites, JavaScript Apps, and other fun stuff on the side.</p>
-        </div>
-
-        <div class="graphs">
-          <div class="graph-item" data-tooltip="Strength" style="height: 70px"></div>
-          <div class="graph-item" data-tooltip="Constitution" style="height: 300px"></div>
-          <div class="graph-item" data-tooltip="Dexterity" style="height: 200px"></div>
-          <div class="graph-item" data-tooltip="Intelligence" style="height: 100px"></div>
-          <div class="graph-item" data-tooltip="Charisma" style="height: 180px"></div>
-        </div>
-
-      </div>
-
-    </header>
-
-    <section class="portfolio-item swords">
-      <div class="wrap">
-        <span class="section-heading">01</span>
-
-        <div class="description-container">
-          <img class="portfolio-image lazyload" data-src="/assets/landing/sword-home-min.png" alt="SWORDS Redesign">
-          
-          <div class="description">
-            <h2>SWORDS Redesign</h2>
-            <p>In this school project, I led a team in redesigning the user interface of SWORDS, which is a student course registration management system (among other things). We  conducted a user task analysis, obtained participant feedback, and created a prototype based on our collected information. We also showcased our project using Invision, which is a tool for simulating interactivity.</p>
-            <a href="/work/swords/" class="button">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="portfolio-item assessment-matrix">
-      <div class="wrap">
-        <span class="section-heading">02</span>
-
-        <div class="description-container">
-          <img class="portfolio-image lazyload" data-src="/assets/landing/assessment-matrix.png" alt="Assessment Matrix Web App">
-          
-          <div class="description">
-            <h2>Assessment Matrix</h2>
-            <p>
-              This is a system that allows faculty to file student assessments more easily.
-              As the project manager, I successfully led a team of 16 people to develop and implement a system from the ground up. This involved
-              determining requirements, designing mockups, writing a REST API, writing an Angular 4 Single Page Application, and deploying the app using
-              DigitalOcean.
-            </p>
-            <a href="/work/assessmentmatrix/" class="button">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="portfolio-item hraccrualtracker">
-      <div class="wrap">
-        <span class="section-heading">03</span>
-
-        <div class="description-container">
-          <img class="portfolio-image lazyload" data-src="/assets/landing/hr-home-min.png" alt="HR Accrual Tracker">
-          
-          <div class="description">
-            <h2>HR Accrual Tracker</h2>
-            <p>I wrote a desktop application for staff in the HR department to more easily track employee accrual data, such as their personal, sick, and vacation hours. The app was written using HTML/CSS/JS and packaged with Electron and Squirrel. The application data is stored in a SQL Server database. I was solely responsible for the database administration, design, development, and support of this application.</p>
-            <a href="/work/hraccrualtracker/" class="button">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <div class="view-all">
-      <span>Want More? </span><a href="/work/" class="button">View All Projects</a>
-    </div>
-
-    <section class="blog">
-      <div class="wrap">
-        <span class="section-heading">Blog</span>
-        
-        <div class="articles">
-          <h3>Recent Posts</h3>
-          {% for post in site.posts limit:5 %}
-            <a href="{{ post.url }}" class="article-link">{{ post.title }}</a>
-          {% endfor %}
-        </div>
-
-        <div class="section-desc">
-          <h2>Infrequent Thoughts</h2>
-          <p>I occasionally write short posts that cover a wide variety of topics. Perhaps some of them will interest you. Check it out.</p>
-          <a href="/blog/" class="button">View All Posts</a>
-        </div>
-      </div>
-    </section>
-
-    <footer id="contact">
-      <div class="wrap">
-        <span class="section-heading">The End</span>
-        <a href="mailto:hello@deeppatel.me" class="mail">hello@deeppatel.me</a>
-        <ul class="social-media">
-          <li><a href="https://www.twitter.com/omegadeep10">Twitter</a></li>
-          <li><a href="https://www.github.com/omegadeep10">GitHub</a></li>
-          <li><a href="https://www.reddit.com/u/omegadeep10">Reddit</a></li>
-        </ul>
-      </div>
-    </footer>
-
-    <script type="text/javascript" src="/js/min/landing.min.js"></script>
-  </body>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Deep Patel. Get in touch.">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <title>Deep Patel</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232d3530'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='40' fill='%23f5f3ed'%3ED%3C/text%3E%3C/svg%3E">
+  <style>
+    :root { color-scheme: light dark; --paper: #f5f3ed; --ink: #2d3530; --muted: #59615b; --accent: #916242; --line: #d7dad1; }
+    * { box-sizing: border-box; }
+    html { min-width: 240px; }
+    body { margin: 0; min-height: 100vh; min-height: 100svh; display: grid; place-items: center; padding: 32px 24px; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { width: min(100%, 540px); padding: clamp(28px, 7vw, 56px) 0; }
+    .mark { width: 36px; height: 3px; margin-bottom: 36px; background: var(--accent); }
+    h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(48px, 11vw, 80px); line-height: 1.08; font-weight: 400; letter-spacing: -0.045em; }
+    address { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); font-style: normal; }
+    a { display: inline-flex; align-items: center; gap: 18px; min-height: 44px; max-width: 100%; color: var(--muted); font-size: 17px; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+    a:hover { color: var(--ink); }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 7px; border-radius: 2px; }
+    .arrow { flex: none; font-size: 22px; text-decoration: none; }
+    @media (prefers-color-scheme: dark) {
+      :root { --paper: #202622; --ink: #f1efe7; --muted: #c2c9c0; --accent: #c69a77; --line: #414b43; }
+    }
+    @media print {
+      :root { --paper: white; --ink: black; --muted: black; --accent: black; --line: #bbb; }
+      body { min-height: auto; display: block; }
+    }
+  </style>
+</head>
+<body>
+  <main aria-labelledby="name">
+    <div class="mark" aria-hidden="true"></div>
+    <h1 id="name">Deep Patel</h1>
+    <address>
+      <a href="mailto:hello@deeppatel.me"><span>hello@deeppatel.me</span><span class="arrow" aria-hidden="true">↗</span></a>
+    </address>
+  </main>
+</body>
 </html>
